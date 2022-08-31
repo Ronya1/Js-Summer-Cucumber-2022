@@ -9,11 +9,6 @@ class Commands {
         return await $(locator);
     }
 
-    async findClickableWebElement(locator) {
-        await $(locator).waitForClickable();
-        return await $(locator);
-    }
-
     /**
      * Generic function to find webElements
      * Input: locator
@@ -27,7 +22,7 @@ class Commands {
      * Input: locator
      */
     async clickWebElement(locator) {
-        const element = await this.findClickableWebElement(locator);
+        const element = await this.findWebElement(locator);
         await element.click();
     }
 
@@ -56,11 +51,6 @@ class Commands {
     async isWebElementDisplayed(locator) {
         const element = await this.findWebElement(locator);
         return await element.isDisplayed();
-    }
-
-    async isWebElementDisplayedWithWait(locator) {
-        await $(locator).waitForDisplayed();
-        return await $(locator).isDisplayed();
     }
 
     /**

@@ -64,7 +64,7 @@ When(/^I typle in "man" in destination And Select "Manila" from auto-suggestion$
 // When(/^I Click Search button $/, async function() {
 // })
 
-And(/^I select tomorrow's date as check-in date and I Select 5 days from check-in as check-out and Click Search button$/, async function() {
+Then(/^I select tomorrow's date as check-in date and I Select 5 days from check-in as check-out and Click Search button$/, async function() {
     await hwHotel.selectTravelDates()
 })
 
