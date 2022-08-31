@@ -7,6 +7,24 @@
 #     And I verify login button is enabled 
 
 
+    Scenario: Verify user get error for invlaid credentials 
+        Given I am on facebook landing page
+        When I enter "#$%^&" as username
+        And I enter "invlaidPwd" as password
+        And I click login button 
+        Then I verify error is displayed
+
+    Scenario: Verify user get error for valid credentials 
+        Given I am on facebook landing page
+        When I enter "deepak@facebook.com" as username
+        And I enter "validPwd@1234" as password
+        And I click login button 
+        Then I verify I am on Homepage
+
+
+
+
+
 # My Homework Below: 
 Feature: Login
 
