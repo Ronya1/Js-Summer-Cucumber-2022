@@ -6,7 +6,7 @@ const homepage = new Homepage();
 const loginpage = new Loginpage();
 
 Given(/^I am on facebook landing page$/, async function() {
-    await browser.url('/');
+    await browser.url('/');git 
 });
 
 Then(/^I verify login username field is enabled$/, async function() {

@@ -16,9 +16,13 @@ Feature: Login
     Scenario: Verify user get error for valid credentials
         Given I am on facebook landing page
         When I enter "deepak@facebook.com" as username
-        And I enter "validPwd@1234" as password
-        And I click login button
+        And I enter "validPwd@1234" as password  
+        And I click login button 
         Then I verify I am on Homepage
+
+        The below 2 lines I changed to when as its not working with And and doesnt match 
+        # And I enter "validPwd@1234" as password  
+        # And I click login button 
 
 
 #         # My Homework Below: 
