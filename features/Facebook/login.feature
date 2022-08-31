@@ -6,21 +6,21 @@ Feature: Login
     #     And I verify login password field is enabled
     #     And I verify login button field is enabled
 
-    # Scenario: Verify user get error for invalid credentials
-    #     Given I am on facebook landing page
-    #     When I enter "@#$%^^^" as username
-    #     And I enter "invalidPwd" as password
-    #     And I click login button
-    #     Then I verify error is displayed
-
-    Scenario: Verify user get error for valid credentials
+    Scenario: Verify user get error for invalid credentials
         Given I am on facebook landing page
-        When I enter "deepak@facebook.com" as username
-        And I enter "validPwd@1234" as password  
-        And I click login button 
-        Then I verify I am on Homepage
+        When I enter "@#$%^^^" as username
+        And I enter "invalidPwd" as password
+        And I click login button
+        Then I verify error is displayed
 
-        The below 2 lines I changed to when as its not working with And and doesnt match 
+    # Scenario: Verify user get error for valid credentials
+    #     Given I am on facebook landing page
+    #     When I enter "deepak@facebook.com" as username
+    #     And I enter "validPwd@1234" as password  
+    #     And I click login button 
+    #     Then I verify I am on Homepage
+
+        # The below 2 lines I changed to when as its not working with And and doesnt match 
         # And I enter "validPwd@1234" as password  
         # And I click login button 
 

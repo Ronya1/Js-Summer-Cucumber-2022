@@ -21,11 +21,11 @@ Then(/^I verify login button field is enabled$/, async function() {
     expect(await homepage.isLoginBtnEnabled(), 'Login button is NOT enabled').to.be.true;
 });
 
-When(/^I enter "(.*)" as username$/, async function(username) {
+When(/^I enter (.*) as username$/, async function(username) {
     await homepage.enterLoginEmail(username);
 });
 
-When(/^I enter "(.*)" as password$/, async function(password) {
+When(/^I enter (.*) as password$/, async function(password) {
     await homepage.enterLoginPassword(password);
 });
 
