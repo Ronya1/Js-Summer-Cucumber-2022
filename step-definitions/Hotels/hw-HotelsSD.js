@@ -1,6 +1,5 @@
 const { Given, Then, When, And } = require("@cucumber/cucumber");
 const { expect } = require("chai");
-const { Browser } = require("puppeteer-core");
 const moment = require("moment");
 const hwhotelsAllPages = require("../../Pages/Hotels/hw-hotelsAllPages")
 
@@ -26,7 +25,7 @@ Then(/^I verify past dates are not enabled$/, async function() {
     let dateAndTimeNow = await moment()
     let formattedDateToday = await dateAndTimeNow.format('DD') 
     let thisREsult = await hotel.RrturnNumOfDisabledDates()
-    expect(thisREsult, 'Length of Disabled Dates is Off').to.equal(formattedDateToday-1)
+    expect( await thisREsult, 'Length of Disabled Dates is Off').to.equal(formattedDateToday-1)
 })
 
 
@@ -81,9 +80,9 @@ Then(/^I Verify destination has Manila And I Verify check-in date is tomorrow's 
     let isManilaPresent = await hwHotel.isCorrectLocationPresent()
     let isAug28Displayed = await hwHotel.isCorrectstartDatePresent()
     let isSep1Displayed = await hwHotel.isCorrectstartDatePresent()
-    expect(isManilaPresent, 'Manila is not present').to.be.true 
-    expect(isAug28Displayed, 'Aug 20 is not present').to.be.true
-    expect(isSep1Displayed, 'Sep 5 is not present').to.be.true
+    expect(await isManilaPresent, 'Manila is not present').to.be.true 
+    expect(await isAug28Displayed, 'Aug 20 is not present').to.be.true
+    expect(await isSep1Displayed, 'Sep 5 is not present').to.be.true
 })
 
 

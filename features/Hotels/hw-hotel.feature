@@ -15,7 +15,7 @@
 Feature: Homepage
 
     Scenario: Verify past dates of the current month is not enabled
-        Given I am on Hotels landing page 
+        Given I am on Hotels landing page1
         When I click date drop down menu
         Then I verify past dates are not enabled 
 
