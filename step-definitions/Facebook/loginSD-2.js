@@ -5,9 +5,9 @@ const Loginpage = require("../../Pages/Facebook/Loginpage");
 const homepage = new Homepage();
 const loginpage = new Loginpage();
 
-Given(/^I am on facebook landing page$/, async function() {
-    await browser.url('/');git 
-});
+// Given(/^I am on facebook landing page$/, async function() {
+//     await browser.url('/');git 
+// });
 
 Then(/^I verify login username field is enabled$/, async function() {
     expect(await homepage.isLoginEmailFieldEnabled(), 'Login email field is NOT enabled').to.be.true;

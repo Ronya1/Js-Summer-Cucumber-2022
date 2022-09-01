@@ -1,0 +1,136 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661996166112' stop='1661996166242'>
+    <name>Search: Verify search location is displayed on Search page - 1</name>
+    <title>Search: Verify search location is displayed on Search page - 1</title>
+    <test-cases>
+        <test-case start='1661996166113' status='passed' stop='1661996166114'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661996166114' status='broken' stop='1661996166241'>
+            <name>Given I am on hotels landing page</name>
+            <title>Given I am on hotels landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1661996166116' status='passed' stop='1661996166141'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5f380791-e3a3-47e4-9ff5-9aecee3a55ed-attachment.json' type='application/json' size='38'/>
+                        <attachment title='Response' source='03cb439d-a885-4de0-85d8-b545f3ef2cf4-attachment.json' type='application/json' size='1965'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='c9b2652e-9c45-438c-a0d8-fab3b94744e0-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='5fdb4958-c416-421a-8489-6bd7f1bb77a9-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='53fc5ff0-0b35-4f8e-92e8-887720999a82-attachment.json' type='application/json' size='1946'/>
+                <attachment title='Response' source='196d8595-6c5c-4e10-af4b-8703f719f513-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='8f337a36-eaeb-487c-af4d-d99a106593e1-attachment.json' type='application/json' size='1956'/>
+            </attachments>
+            <failure>
+                <message>RequestError: connect ECONNRESET 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNRESET 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/got/dist/source/core/index.js:970:111)
+                    at Object.onceWrapper (node:events:642:26)
+                    at ClientRequest.emit (node:events:539:35)
+                    at ClientRequest.emit (node:domain:475:12)
+                    at ClientRequest.origin.emit (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)
+                    at Socket.socketErrorListener (node:_http_client:454:9)
+                    at Socket.emit (node:events:527:28)
+                    at Socket.emit (node:domain:475:12)
+                    at emitErrorNT (node:internal/streams/destroy:157:8)
+                    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661996166241' status='pending' stop='1661996166241'>
+            <name>When I enter "new" in going to</name>
+            <title>When I enter "new" in going to</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661996166241' status='pending' stop='1661996166241'>
+            <name>And I select "MANHATTAN" from auto-suggestion</name>
+            <title>And I select "MANHATTAN" from auto-suggestion</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661996166241' status='pending' stop='1661996166241'>
+            <name>And I click on search button</name>
+            <title>And I click on search button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661996166241' status='pending' stop='1661996166242'>
+            <name>Then I verify going to location contains ""MANHATTAN"</name>
+            <title>Then I verify going to location contains ""MANHATTAN"</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661996166242' status='passed' stop='1661996166242'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
