@@ -1,4 +1,4 @@
-const { Given, Then, When, And } = require("@cucumber/cucumber");
+const { Given, Then, When } = require("@cucumber/cucumber");
 const { expect } = require("chai");
 const moment = require("moment");
 const hwhotelsAllPages = require("../../Pages/Hotels/hw-hotelsAllPages")
@@ -13,8 +13,10 @@ const hwhotelsAllPages = require("../../Pages/Hotels/hw-hotelsAllPages")
 const hwHotel = new hwhotelsAllPages
 
 Given(/^I am on Hotels landing page$/, async function() {
-    await browser.url('https://www.hotels.com/')//move 
-})
+    await browser.url('https://www.hotels.com/');
+    await browser.pause(2000)
+
+});
 
 When(/^I click date drop down menu$/, async function() {
     await hwHotel.clickDateSearchDropDown()
@@ -47,9 +49,9 @@ Then(/^I verify past dates are not enabled$/, async function() {
 
 
 
-Given(/^I am on Hotels landing page$/, async function() {
-    await browser.url('https://www.hotels.com/')//move to the hw-hotelsAllPages.js
-})
+// Given(/^I am on Hotels landing page$/, async function() {
+//     await browser.url('https://www.hotels.com/')//move to the hw-hotelsAllPages.js
+// })
 
 When(/^I typle in "man" in destination And Select "Manila" from auto-suggestion$/, async function() {
     await hwHotel.enterDestination('Man')

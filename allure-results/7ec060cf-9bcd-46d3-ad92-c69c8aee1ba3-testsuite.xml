@@ -1,0 +1,123 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662080858131' stop='1662080858309'>
+    <name>Login: Verify login fields are enabled by default</name>
+    <title>Login: Verify login fields are enabled by default</title>
+    <test-cases>
+        <test-case start='1662080858131' status='passed' stop='1662080858133'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080858133' status='broken' stop='1662080858307'>
+            <name>Given I am on facebook homepage</name>
+            <title>Given I am on facebook homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662080858135' status='passed' stop='1662080858166'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='396b9bbb-638f-44b3-9f64-9e6b61db6da1-attachment.json' type='application/json' size='40'/>
+                        <attachment title='Response' source='794016d7-3655-4054-b7a9-c71a062b0e6e-attachment.json' type='application/json' size='1965'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='a82b9817-9b89-4d91-ba5f-753f91633384-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='ed18bc13-030d-4b00-855e-bd6e31e38974-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='9f3b5c0b-5aa8-4ab2-80c1-3d98311ec378-attachment.json' type='application/json' size='1946'/>
+                <attachment title='Response' source='7068e018-741c-42a1-a00f-5705536990c3-attachment.json' type='application/json' size='1956'/>
+                <attachment title='Response' source='41932ce3-5bbf-4ede-831c-4ac30ab220d8-attachment.json' type='application/json' size='1965'/>
+                <attachment title='Response' source='6aba3957-9f81-4a16-b2cf-dfad07bb1e7b-attachment.json' type='application/json' size='1953'/>
+            </attachments>
+            <failure>
+                <message>RequestError: connect ECONNRESET 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNRESET 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/got/dist/source/core/index.js:970:111)
+                    at Object.onceWrapper (node:events:642:26)
+                    at ClientRequest.emit (node:events:539:35)
+                    at ClientRequest.emit (node:domain:475:12)
+                    at ClientRequest.origin.emit (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)
+                    at Socket.socketErrorListener (node:_http_client:454:9)
+                    at Socket.emit (node:events:527:28)
+                    at Socket.emit (node:domain:475:12)
+                    at emitErrorNT (node:internal/streams/destroy:157:8)
+                    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662080858308' status='pending' stop='1662080858308'>
+            <name>Then I verify login username field is enabled</name>
+            <title>Then I verify login username field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080858308' status='pending' stop='1662080858308'>
+            <name>And I verify login password field is enabled</name>
+            <title>And I verify login password field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080858308' status='pending' stop='1662080858308'>
+            <name>And I verify login button field is enabled</name>
+            <title>And I verify login button field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080858308' status='passed' stop='1662080858308'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

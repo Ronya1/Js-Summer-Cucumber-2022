@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662082257841' stop='1662082258158'>
+    <name>Home page: Verify there are 46 links on the landing page</name>
+    <title>Home page: Verify there are 46 links on the landing page</title>
+    <test-cases>
+        <test-case start='1662082257841' status='passed' stop='1662082257842'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662082257842' status='passed' stop='1662082258068'>
+            <name>Given I am on facebook homepage</name>
+            <title>Given I am on facebook homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662082257842' status='passed' stop='1662082258068'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='67ca8f9d-a21f-4e0c-ae58-2890ac93a8e2-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662082258068' status='passed' stop='1662082258158'>
+            <name>Then I verify 46 links on the homepage</name>
+            <title>Then I verify 46 links on the homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662082258069' status='passed' stop='1662082258082'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='6c7e2def-e88b-4880-8e2c-80c45a7fd942-attachment.json' type='application/json' size='45'/>
+                        <attachment title='Response' source='219012e3-9b06-4ddd-9aac-de2a6488ec2a-attachment.json' type='application/json' size='4188'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662082258115' status='passed' stop='1662082258124'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='03cc96ec-9681-47ac-ac49-1a3e12b09c57-attachment.json' type='application/json' size='45'/>
+                        <attachment title='Response' source='61d02661-5960-4bec-842c-df3651a2c7c2-attachment.json' type='application/json' size='4188'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662082258158' status='passed' stop='1662082258158'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662079979198' stop='1662079979202'>
+    <name>Homepage: Verify number of links in Church Chairs menu</name>
+    <title>Homepage: Verify number of links in Church Chairs menu</title>
+    <test-cases>
+        <test-case start='1662079979199' status='passed' stop='1662079979200'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662079979200' status='broken' stop='1662079979201'>
+            <name>Given I am on classroom essentails homepage</name>
+            <title>Given I am on classroom essentails homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I am on classroom essentails homepage" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I am on classroom essentails homepage" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/ClassroomEssentials/Homepage.feature):1:1
+                	at Scenario(Verify number of links in Church Chairs menu):3:5
+                	at Step(I am on classroom essentails homepage):4:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662079979201' status='broken' stop='1662079979201'>
+            <name>When I move mouse on Church Chairs</name>
+            <title>When I move mouse on Church Chairs</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I move mouse on Church Chairs" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I move mouse on Church Chairs" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/ClassroomEssentials/Homepage.feature):1:1
+                	at Scenario(Verify number of links in Church Chairs menu):3:5
+                	at Step(I move mouse on Church Chairs):5:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662079979201' status='broken' stop='1662079979201'>
+            <name>Then I verify 7 options are displayed</name>
+            <title>Then I verify 7 options are displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step "I verify 7 options are displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify 7 options are displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/ClassroomEssentials/Homepage.feature):1:1
+                	at Scenario(Verify number of links in Church Chairs menu):3:5
+                	at Step(I verify 7 options are displayed):6:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662079979201' status='passed' stop='1662079979202'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,115 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662080335830' stop='1662080335871'>
+    <name>Login: Verify login fields are enabled by default</name>
+    <title>Login: Verify login fields are enabled by default</title>
+    <test-cases>
+        <test-case start='1662080335831' status='passed' stop='1662080335832'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080335832' status='broken' stop='1662080335861'>
+            <name>Given I am on facebook homepage</name>
+            <title>Given I am on facebook homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662080335833' status='broken' stop='1662080335861'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='f0e78292-b1b3-435b-8479-0e1642894c4f-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: connect ECONNRESET 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNRESET 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/got/dist/source/core/index.js:970:111)
+                    at Object.onceWrapper (node:events:642:26)
+                    at ClientRequest.emit (node:events:539:35)
+                    at ClientRequest.emit (node:domain:475:12)
+                    at ClientRequest.origin.emit (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)
+                    at Socket.socketErrorListener (node:_http_client:454:9)
+                    at Socket.emit (node:events:527:28)
+                    at Socket.emit (node:domain:475:12)
+                    at emitErrorNT (node:internal/streams/destroy:157:8)
+                    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662080335861' status='pending' stop='1662080335867'>
+            <name>Then I verify login username field is enabled</name>
+            <title>Then I verify login username field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080335867' status='pending' stop='1662080335868'>
+            <name>And I verify login password field is enabled</name>
+            <title>And I verify login password field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080335868' status='pending' stop='1662080335870'>
+            <name>And I verify login button field is enabled</name>
+            <title>And I verify login button field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080335870' status='passed' stop='1662080335870'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

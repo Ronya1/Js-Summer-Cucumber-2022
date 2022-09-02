@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662080232176' stop='1662080232180'>
+    <name>Home page: Verify Portal opens in a new tab</name>
+    <title>Home page: Verify Portal opens in a new tab</title>
+    <test-cases>
+        <test-case start='1662080232176' status='passed' stop='1662080232176'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080232176' status='broken' stop='1662080232179'>
+            <name>Given I am on facebook homepage</name>
+            <title>Given I am on facebook homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662080232176' status='broken' stop='1662080232179'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='fcb80ac3-3c53-4a9d-8e64-f14c32dc4241-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>RequestError: connect ECONNRESET 127.0.0.1:9515</message>
+                <stack-trace>RequestError: connect ECONNRESET 127.0.0.1:9515
+                    at ClientRequest.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/got/dist/source/core/index.js:970:111)
+                    at Object.onceWrapper (node:events:642:26)
+                    at ClientRequest.emit (node:events:539:35)
+                    at ClientRequest.emit (node:domain:475:12)
+                    at ClientRequest.origin.emit (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@szmarczak/http-timer/dist/source/index.js:43:20)
+                    at Socket.socketErrorListener (node:_http_client:454:9)
+                    at Socket.emit (node:events:527:28)
+                    at Socket.emit (node:domain:475:12)
+                    at emitErrorNT (node:internal/streams/destroy:157:8)
+                    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+                    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662080232179' status='pending' stop='1662080232179'>
+            <name>When I click on Portal link</name>
+            <title>When I click on Portal link</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080232179' status='pending' stop='1662080232179'>
+            <name>Then I verify Portal opens in a new tab</name>
+            <title>Then I verify Portal opens in a new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662080232179' status='passed' stop='1662080232180'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

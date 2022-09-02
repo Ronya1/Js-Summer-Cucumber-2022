@@ -14,7 +14,7 @@ When(/^I select "(.+)" from auto-suggestion$/, async function (autoSuggestionDes
     await homepage.selectDestinationFromAutoSuggestion(autoSuggestionDestination);
 })
 
-When(/^I click on search button$/, async function () {
+When(/^I click on search button on Homepage$/, async function () {
     await homepage.clickSearchButton();
 })
 

@@ -5,7 +5,7 @@ class HotelsPOM {
 
 // Locators go here 
 
-DateSearchDropDown = $(`//button[@ id ="date_form_field-btn"]`)
+DateSearchDropDown = $(`//button[@data-name ="date_form_field"]`)
 dateBackButton = $(`//button[@data-stid="date-picker-paging"][1]`)
 augDisabledDateLocator = $$(`//following-sibling::table//button[contains(@class, "is-disabled")]`)
 

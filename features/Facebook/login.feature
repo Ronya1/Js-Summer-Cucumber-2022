@@ -1,30 +1,24 @@
+@fbhomepage @regression @fb
 Feature: Login
 
-    Scenario: Verify user get error for invalid credentials
-        Given I am on facebook landing page
-        When I enter "@#$%^^^" as username
-        And I enter "invalidPwd" as password
+    @login-1 @sanity
+    Scenario: Verify login fields are enabled by default
+        Given I am on facebook homepage
+        Then I verify login username field is enabled
+        And I verify login password field is enabled
+        And I verify login button field is enabled
+
+    @login-2 @sanity
+    Scenario Outline: Verify user get error for invalid credentials
+        Given I am on facebook homepage
+        When I enter "<username>" as username
+        And I enter "<password>" as password
         And I click login button
         Then I verify error is displayed
+        Examples:
+            | username         | password   |
+            | #$%^&            | invalidPwd |
+            | deepak@gmail.com | abcd@1234  |
 
-    # Scenario: Verify user get error for valid credentials
-    #     Given I am on facebook landing page
-    #     When I enter "deepak@facebook.com" as username
-    #     And I enter "validPwd@1234" as password  
-    #     And I click login button 
-    #     Then I verify I am on Homepage
-
-        # The below 2 lines I changed to when as its not working with And and doesnt match 
-        # And I enter "validPwd@1234" as password  
-        # And I click login button 
-
-
-#         # My Homework Below: 
-# Feature: Login
-
-#     Scenario: Verify login gets error on empty login form
-#     Given I am on facebook landing page
-#     When I click login button1
-#     Then I verify error is displayed1
-
-# # (error for reference -> The email address or mobile number you entered isn't connected to an account.)
+# How to handle DDT (Data Driven Testing) in Cucumber (BDD - Behavior Driven Development)
+# Ans: Using Scenario-Outline with Examples
