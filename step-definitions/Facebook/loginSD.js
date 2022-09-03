@@ -29,13 +29,13 @@ Given(/^I am on (facebook|hotels|darksky) homepage$/, async function(urlName) {
 Then(/^I verify login (username|password|button) field is enabled$/, async function(fieldName) {
     switch (fieldName.toLowerCase()) {
         case 'username':
-            expect(await homepage.isLoginEmailFieldEnabled(), 'Login email field is NOT enabled').to.be.true;
+            expect(await homepage.isLoginFieldEnabled('username'), 'Login email field is NOT enabled').to.be.true;
             break;
          case 'password':
-            expect(await homepage.isLoginPwdFieldEnabled(), 'Login password field is NOT enabled').to.be.true;
+            expect(await homepage.isLoginFieldEnabled('password'), 'Login password field is NOT enabled').to.be.true;
             break;
         case 'button':
-            expect(await homepage.isLoginBtnEnabled(), 'Login button is NOT enabled').to.be.true;
+            expect(await homepage.isLoginFieldEnabled('button'), 'Login button is NOT enabled').to.be.true;
     } 
 });
 
@@ -67,8 +67,15 @@ When(/^I enter "(.+)" as (username|password)$/, async function(value, fieldName)
 });
 
 
-When(/^I click login button$/, async function() {
-    await homepage.clickLoginButton();
+When(/^I click (Create New Account|login) button$/, async function(buttonName) {
+    switch (buttonName.toLowerCase()) {
+        case 'login':
+            await homepage.clickLoginButton();
+            break;
+        case 'create new account':
+            await homepage.clickCreateNewAccount();
+            break;
+    }
 });
 
 Then(/^I verify error is displayed$/, async function() {

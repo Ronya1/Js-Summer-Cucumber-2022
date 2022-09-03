@@ -1,16 +1,17 @@
 const Commands = require("../Commands");
+const { faker } = require('@faker-js/faker');
 
 class Homepage {
 
-    commands = new Commands()
-    // commands = new Commands();
+    commands = new Commands();
     // Locators for web-elements on the Homepage (variables)
     loginEmailLocator = '#email';
     loginPwdLocator = '#pass';
     loginBtnLocator = '<button>';
-    createNewAccountLocator = '=Create New Account';
+    createNewAccountLocator = '//a[text()="Create New Account" or text()="Create new account"]';
+    // OR -> //a[contains(text(), 'ccount')]
 
-    
+
 
     // Functions in order to interact with the web-elements on the Homepage
     /**
@@ -20,6 +21,7 @@ class Homepage {
      */
     async enterLoginEmail(loginEmail) {
         await this.commands.typeInWebElement(this.loginEmailLocator, loginEmail);
+        const fName = faker.name.firstName();
     }
 
 
@@ -34,6 +36,15 @@ class Homepage {
 
     /**
      * function to click on login button
+     * Input: locator
+     *  
+     */
+    async clickLoginButton() {
+        await this.commands.clickWebElement(this.loginBtnLocator);
+    }
+
+    /**
+     * function to click on Create New Account button
      * Input: locator
      *  
      */
