@@ -34,7 +34,8 @@ ALLURE-REPORT:
 
 Add Allure Report:
     npm install @wdio/allure-reporter --save-dev
-    npm install -g allure-commandline --save-dev
+    npm install -g allure-commandline --save-dev // Use sudo npm install -g allure-commandline --save-dev the sudo is for mac 
+    sudo makes you run the command as the primary user 
 
     in wdio.conf.js:
         reporters: ['spec',['allure', 
@@ -49,7 +50,7 @@ Add Allure Report:
 
 To generate Allure report:
     allure generate --clean <allure-results-path>
-    eg: allure generate --clean ./reports/allure-results/
+    eg: allure generate --clean ./report/allure-results/
 
 To open allure report:
     allure open

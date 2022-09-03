@@ -1,0 +1,154 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662213223377' stop='1662213259727'>
+    <name>Login</name>
+    <title>Login</title>
+    <test-cases>
+        <test-case start='1662213224608' status='passed' stop='1662213255261'>
+            <name>Verify login fields are enabled by default</name>
+            <title>Verify login fields are enabled by default</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662213224612' status='passed' stop='1662213253926'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213253927' status='passed' stop='1662213254484'>
+                    <name>Then I verify login username field is enabled</name>
+                    <title>Then I verify login username field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213254484' status='passed' stop='1662213254941'>
+                    <name>And I verify login password field is enabled</name>
+                    <title>And I verify login password field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213254941' status='passed' stop='1662213255259'>
+                    <name>And I verify login button field is enabled</name>
+                    <title>And I verify login button field is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662213255261' status='broken' stop='1662213258521'>
+            <name>Verify user get error for invalid credentials</name>
+            <title>Verify user get error for invalid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662213255262' status='passed' stop='1662213256551'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213256551' status='broken' stop='1662213258521'>
+                    <name>When I enter "#$%^&amp;" as username</name>
+                    <title>When I enter "#$%^&amp;" as username</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='6dbb1640-d8af-4f33-8d92-e2bd6a357d59-attachment.png' type='image/png' size='77195'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662213258521' status='canceled' stop='1662213258522'>
+                    <name>And I enter "invalidPwd" as password</name>
+                    <title>And I enter "invalidPwd" as password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213258522' status='canceled' stop='1662213258522'>
+                    <name>And I click login button</name>
+                    <title>And I click login button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213258522' status='canceled' stop='1662213258522'>
+                    <name>Then I verify error is displayed</name>
+                    <title>Then I verify error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>ReferenceError: faker is not defined</message>
+                <stack-trace>ReferenceError: faker is not defined
+                    at Homepage.enterLoginEmail (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/Pages/Facebook/Homepage.js:24:23)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Facebook/loginSD.js:61:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662213258523' status='broken' stop='1662213259724'>
+            <name>Verify user get error for invalid credentials</name>
+            <title>Verify user get error for invalid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-3'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662213258523' status='passed' stop='1662213259034'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213259034' status='broken' stop='1662213259724'>
+                    <name>When I enter "deepak@gmail.com" as username</name>
+                    <title>When I enter "deepak@gmail.com" as username</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='2324cb36-e070-4ffc-97fd-170932a51091-attachment.png' type='image/png' size='79129'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662213259724' status='canceled' stop='1662213259724'>
+                    <name>And I enter "abcd@1234" as password</name>
+                    <title>And I enter "abcd@1234" as password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213259724' status='canceled' stop='1662213259724'>
+                    <name>And I click login button</name>
+                    <title>And I click login button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213259724' status='canceled' stop='1662213259724'>
+                    <name>Then I verify error is displayed</name>
+                    <title>Then I verify error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>ReferenceError: faker is not defined</message>
+                <stack-trace>ReferenceError: faker is not defined
+                    at Homepage.enterLoginEmail (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/Pages/Facebook/Homepage.js:24:23)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Facebook/loginSD.js:61:13)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
