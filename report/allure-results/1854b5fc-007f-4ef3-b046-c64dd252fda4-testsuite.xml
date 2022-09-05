@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662405553311' stop='1662405557182'>
+    <name>Homepage</name>
+    <title>Homepage</title>
+    <test-cases>
+        <test-case start='1662405553401' status='failed' stop='1662405557181'>
+            <name>Verify number of links in Church Chairs menu</name>
+            <title>Verify number of links in Church Chairs menu</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662405553408' status='passed' stop='1662405556417'>
+                    <name>Given I am on classroom essentails homepage</name>
+                    <title>Given I am on classroom essentails homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662405556417' status='passed' stop='1662405556755'>
+                    <name>When I move mouse on Church Chairs</name>
+                    <title>When I move mouse on Church Chairs</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662405556755' status='failed' stop='1662405557181'>
+                    <name>Then I verify 7 options are displayed</name>
+                    <title>Then I verify 7 options are displayed</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='e4ee7774-a3e3-4af7-a408-a19294c2ff97-attachment.png' type='image/png' size='809345'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Church chairs menu list count is not as expected: expected +0 to equal 7</message>
+                <stack-trace>AssertionError: Church chairs menu list count is not as expected: expected +0 to equal 7
+                    + expected - actual
+                
+                    -0
+                    +7
+                
+                    at CREssentials.verifyNumberOfOptionsDisplayed (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/Pages/classroomEssentials/homePage.js:29:92)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/ClassroomEssentials/HomepageSD.js:29:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

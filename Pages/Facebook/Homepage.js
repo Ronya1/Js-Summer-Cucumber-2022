@@ -21,7 +21,7 @@ class Homepage {
      */
     async enterLoginEmail(loginEmail) {
         await this.commands.typeInWebElement(this.loginEmailLocator, loginEmail);
-        const fName = faker.name.firstName();
+        //const fName = faker.name.firstName();
     }
 
 

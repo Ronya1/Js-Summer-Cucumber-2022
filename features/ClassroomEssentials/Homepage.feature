@@ -1,5 +1,6 @@
 Feature: Homepage
 
+    @classroomHP
     Scenario: Verify number of links in Church Chairs menu
         Given I am on classroom essentails homepage
         When I move mouse on Church Chairs
