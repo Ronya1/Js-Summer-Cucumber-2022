@@ -1,0 +1,137 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662396480221' stop='1662396484688'>
+    <name>Sign Up</name>
+    <title>Sign Up</title>
+    <test-cases>
+        <test-case start='1662396480454' status='broken' stop='1662396483228'>
+            <name>Verify current date is selected on sign up form</name>
+            <title>Verify current date is selected on sign up form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662396480460' status='passed' stop='1662396482531'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396482531' status='passed' stop='1662396483227'>
+                    <name>When I click Create New Account button</name>
+                    <title>When I click Create New Account button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396483227' status='broken' stop='1662396483228'>
+                    <name>Then I verify current date is selected in dropdown</name>
+                    <title>Then I verify current date is selected in dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify current date is selected in dropdown" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify current date is selected in dropdown" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/Facebook/Signup.feature):1:1
+                	at Scenario(Verify current date is selected on sign up form):9:5
+                	at Step(I verify current date is selected in dropdown):12:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662396483231' status='broken' stop='1662396484687'>
+            <name>Verify user gets error if already registered</name>
+            <title>Verify user gets error if already registered</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-4'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662396483232' status='passed' stop='1662396484206'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484206' status='passed' stop='1662396484683'>
+                    <name>When I click Create New Account button</name>
+                    <title>When I click Create New Account button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484683' status='broken' stop='1662396484684'>
+                    <name>And I enter "John" in firstname</name>
+                    <title>And I enter "John" in firstname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484684' status='broken' stop='1662396484684'>
+                    <name>And I enter "Doe" in laststname</name>
+                    <title>And I enter "Doe" in laststname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484684' status='broken' stop='1662396484685'>
+                    <name>And I enter "9879879870" in mobile number</name>
+                    <title>And I enter "9879879870" in mobile number</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484685' status='broken' stop='1662396484686'>
+                    <name>And I enter "abcd@1234" in new password</name>
+                    <title>And I enter "abcd@1234" in new password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484686' status='broken' stop='1662396484686'>
+                    <name>And I enter "abcd@1234" in confirm new password</name>
+                    <title>And I enter "abcd@1234" in confirm new password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484686' status='broken' stop='1662396484686'>
+                    <name>And I select "Dec 12 1990" in date of birth</name>
+                    <title>And I select "Dec 12 1990" in date of birth</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484686' status='broken' stop='1662396484686'>
+                    <name>And I select "female" in gender</name>
+                    <title>And I select "female" in gender</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484686' status='broken' stop='1662396484686'>
+                    <name>And I click submit button</name>
+                    <title>And I click submit button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662396484686' status='broken' stop='1662396484687'>
+                    <name>Then I verify user is already registered error is displayed</name>
+                    <title>Then I verify user is already registered error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify user is already registered error is displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify user is already registered error is displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/Facebook/Signup.feature):1:1
+                	at Scenario(Verify user gets error if already registered):24:5
+                	at Step(I verify user is already registered error is displayed):35:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
