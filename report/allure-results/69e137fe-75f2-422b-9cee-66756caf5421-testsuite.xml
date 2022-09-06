@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662405051403' stop='1662405054840'>
+    <name>Homepage</name>
+    <title>Homepage</title>
+    <test-cases>
+        <test-case start='1662405051701' status='broken' stop='1662405054838'>
+            <name>Verify number of links in Church Chairs menu</name>
+            <title>Verify number of links in Church Chairs menu</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662405051705' status='passed' stop='1662405054560'>
+                    <name>Given I am on classroom essentails homepage</name>
+                    <title>Given I am on classroom essentails homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662405054560' status='broken' stop='1662405054838'>
+                    <name>When I move mouse on Church Chairs</name>
+                    <title>When I move mouse on Church Chairs</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3f040798-5ff0-49c1-b1c9-3f58e51b27f8-attachment.png' type='image/png' size='1125811'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662405054838' status='canceled' stop='1662405054838'>
+                    <name>Then I verify 7 options are displayed</name>
+                    <title>Then I verify 7 options are displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: Cannot read properties of undefined (reading 'churchChairsMenuElement')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'churchChairsMenuElement')
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/ClassroomEssentials/HomepageSD.js:19:53)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async wrapPromiseWithTimeout (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/time.js:67:12)
+                    at async Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+                    at async Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+                    at async TestCaseRunner.invokeStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

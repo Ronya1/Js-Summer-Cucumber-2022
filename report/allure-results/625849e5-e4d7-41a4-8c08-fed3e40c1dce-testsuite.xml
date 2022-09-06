@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662213257294' stop='1662213269999'>
+    <name>Homepage</name>
+    <title>Homepage</title>
+    <test-cases>
+        <test-case start='1662213257834' status='broken' stop='1662213269996'>
+            <name>Verify past dates of the current month is not enabled</name>
+            <title>Verify past dates of the current month is not enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662213257840' status='passed' stop='1662213267290'>
+                    <name>Given I am on Hotels landing page</name>
+                    <title>Given I am on Hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213267290' status='passed' stop='1662213269606'>
+                    <name>When I click date drop down menu</name>
+                    <title>When I click date drop down menu</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213269606' status='broken' stop='1662213269996'>
+                    <name>Then I verify past dates are not enabled</name>
+                    <title>Then I verify past dates are not enabled</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='76e405ce-035a-42b2-afc2-277c6dfef274-attachment.png' type='image/png' size='623189'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: Element &lt;button class="uitk-button uitk-button-medium uitk-button-only-icon uitk-layout-flex-item uitk-button-paging" type="button"> is not clickable at point (456,218) because another element &lt;div class="uitk-layout-flex uitk-layout-flex-justify-content-space-between uitk-date-picker-menu-pagination-container"> obscures it</message>
+                <stack-trace>element click intercepted: Element &lt;button class="uitk-button uitk-button-medium uitk-button-only-icon uitk-layout-flex-item uitk-button-paging" type="button"> is not clickable at point (456,218) because another element &lt;div class="uitk-layout-flex uitk-layout-flex-justify-content-space-between uitk-date-picker-menu-pagination-container"> obscures it
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662213269998' status='passed' stop='1662213269998'>
+            <name>Verify past dates of the current month is not enabled</name>
+            <title>Verify past dates of the current month is not enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

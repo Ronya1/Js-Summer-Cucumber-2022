@@ -1,0 +1,166 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662213229999' stop='1662213242624'>
+    <name>Home page</name>
+    <title>Home page</title>
+    <test-cases>
+        <test-case start='1662213230504' status='passed' stop='1662213236328'>
+            <name>Verify Instagram opens in a new tab</name>
+            <title>Verify Instagram opens in a new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662213230546' status='passed' stop='1662213234673'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213234673' status='passed' stop='1662213235727'>
+                    <name>When I click on Instagram link</name>
+                    <title>When I click on Instagram link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213235729' status='passed' stop='1662213236327'>
+                    <name>Then I verify Instagram opens in a new tab</name>
+                    <title>Then I verify Instagram opens in a new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662213236328' status='passed' stop='1662213238314'>
+            <name>Verify Portal opens in a new tab</name>
+            <title>Verify Portal opens in a new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662213236329' status='passed' stop='1662213237153'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213237153' status='passed' stop='1662213237872'>
+                    <name>When I click on Portal link</name>
+                    <title>When I click on Portal link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213237872' status='passed' stop='1662213238312'>
+                    <name>Then I verify Portal opens in a new tab</name>
+                    <title>Then I verify Portal opens in a new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662213238314' status='passed' stop='1662213240559'>
+            <name>Verify Oculus opens in a new tab</name>
+            <title>Verify Oculus opens in a new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662213238315' status='passed' stop='1662213239318'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213239318' status='passed' stop='1662213240182'>
+                    <name>When I click on Oculus link</name>
+                    <title>When I click on Oculus link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213240182' status='passed' stop='1662213240558'>
+                    <name>Then I verify Oculus opens in a new tab</name>
+                    <title>Then I verify Oculus opens in a new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662213240559' status='passed' stop='1662213241901'>
+            <name>Verify Facebook Pay opens in a new tab</name>
+            <title>Verify Facebook Pay opens in a new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662213240559' status='passed' stop='1662213241468'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213241468' status='passed' stop='1662213241789'>
+                    <name>When I click on Facebook Pay link</name>
+                    <title>When I click on Facebook Pay link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213241789' status='passed' stop='1662213241900'>
+                    <name>Then I verify Facebook Pay opens in a new tab</name>
+                    <title>Then I verify Facebook Pay opens in a new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662213241901' status='passed' stop='1662213242623'>
+            <name>Verify there are 46 links on the landing page</name>
+            <title>Verify there are 46 links on the landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-2'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662213241901' status='passed' stop='1662213242185'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213242185' status='passed' stop='1662213242622'>
+                    <name>Then I verify 46 links on the homepage</name>
+                    <title>Then I verify 46 links on the homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662391718145' stop='1662391740570'>
+    <name>Homepage</name>
+    <title>Homepage</title>
+    <test-cases>
+        <test-case start='1662391719404' status='broken' stop='1662391740567'>
+            <name>Verify past dates of the current month is not enabled</name>
+            <title>Verify past dates of the current month is not enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662391719407' status='passed' stop='1662391733872'>
+                    <name>Given I am on Hotels landing page</name>
+                    <title>Given I am on Hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662391733872' status='passed' stop='1662391735981'>
+                    <name>When I click date drop down menu</name>
+                    <title>When I click date drop down menu</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662391735981' status='broken' stop='1662391740567'>
+                    <name>Then I verify past dates are not enabled</name>
+                    <title>Then I verify past dates are not enabled</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='44e48cc5-d42c-44bb-abff-3d02e159a91c-attachment.png' type='image/png' size='562227'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: element click intercepted: Element &lt;button data-stid="date-picker-paging" type="button" class="uitk-button uitk-button-medium uitk-button-only-icon uitk-layout-flex-item uitk-button-paging" disabled="">...&lt;/button> is not clickable at point (416, 218). Other element would receive the click: &lt;div class="uitk-layout-flex uitk-layout-flex-justify-content-space-between uitk-date-picker-menu-pagination-container">...&lt;/div></message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;button data-stid="date-picker-paging" type="button" class="uitk-button uitk-button-medium uitk-button-only-icon uitk-layout-flex-item uitk-button-paging" disabled="">...&lt;/button> is not clickable at point (416, 218). Other element would receive the click: &lt;div class="uitk-layout-flex uitk-layout-flex-justify-content-space-between uitk-date-picker-menu-pagination-container">...&lt;/div>
+                  (Session info: chrome=105.0.5195.102)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662391740568' status='passed' stop='1662391740570'>
+            <name>Verify past dates of the current month is not enabled</name>
+            <title>Verify past dates of the current month is not enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

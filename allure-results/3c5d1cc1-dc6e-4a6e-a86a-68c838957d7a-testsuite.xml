@@ -1,0 +1,158 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662082903640' stop='1662082916118'>
+    <name>Homepage: Verify past dates of the current month is not enabled</name>
+    <title>Homepage: Verify past dates of the current month is not enabled</title>
+    <test-cases>
+        <test-case start='1662082903640' status='passed' stop='1662082903642'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1662082903642' status='passed' stop='1662082909563'>
+            <name>Given I am on Hotels landing page</name>
+            <title>Given I am on Hotels landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662082903643' status='passed' stop='1662082903671'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b94f8a53-d68d-45ff-a4c4-d495ad20b6af-attachment.json' type='application/json' size='38'/>
+                        <attachment title='Response' source='8048b86e-2952-4a12-9222-68e2a7b55a54-attachment.json' type='application/json' size='1965'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='4dfe841b-bd3c-4e5f-a4d5-f7124aba84a9-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='01272a7a-d942-4236-8310-05381d52e729-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='2ed67532-98df-4700-9697-1481a262703a-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='d6850f9e-2245-4c61-ba09-de8ff9b63b38-attachment.json' type='application/json' size='1946'/>
+                <attachment title='Response' source='c1f39642-9521-4426-8677-6f65a0f419c7-attachment.json' type='application/json' size='1956'/>
+                <attachment title='Response' source='197e1187-5cae-47c1-8741-1f271d906acb-attachment.json' type='application/json' size='1965'/>
+                <attachment title='Response' source='91a49323-aebe-4552-a0e5-f4309a9f8813-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='23206dbe-3777-46fc-b46b-8b9c469d7e21-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='372f114e-a21b-4bdb-85de-8adfdfbb6e96-attachment.json' type='application/json' size='1951'/>
+                <attachment title='Response' source='0e10aa78-6fc5-4c02-8726-6b6c66193b81-attachment.json' type='application/json' size='1998'/>
+                <attachment title='Response' source='c560ce6b-0a3b-45a3-9ab5-105eba2811d2-attachment.json' type='application/json' size='2081'/>
+                <attachment title='Response' source='d6bdc23d-057e-468e-aa5a-ab2ee45f4d38-attachment.json' type='application/json' size='1951'/>
+                <attachment title='Response' source='b883e861-22ac-4e0a-80f3-b011841662d6-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='2bc4e444-1f61-4ace-b85f-c8e8bd300724-attachment.json' type='application/json' size='1960'/>
+            </attachments>
+        </test-case>
+        <test-case start='1662082909564' status='passed' stop='1662082911789'>
+            <name>When I click date drop down menu</name>
+            <title>When I click date drop down menu</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662082909566' status='passed' stop='1662082909619'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='be68fa2b-c25e-4f19-a713-3700ed16fa75-attachment.json' type='application/json' size='78'/>
+                        <attachment title='Response' source='10409a09-f062-49f8-9589-f72b258e7983-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662082909621' status='passed' stop='1662082909669'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='c673d174-e1cf-46cf-b9d9-5c80b6381408-attachment.json' type='application/json' size='78'/>
+                        <attachment title='Response' source='d32556da-e5ed-412f-a464-3779711eee37-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662082909671' status='passed' stop='1662082909782'>
+                    <name>POST /session/:sessionId/element/cf64b9bf-fdc3-4015-9e79-9f73140fcb94/click</name>
+                    <title>POST /session/:sessionId/element/cf64b9bf-fdc3-4015-9e79-9f73140fcb94/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1662082911789' status='broken' stop='1662082916116'>
+            <name>Then I verify past dates are not enabled</name>
+            <title>Then I verify past dates are not enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1662082911791' status='passed' stop='1662082911806'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='edc18043-56fe-4cbe-a0c5-53e851199016-attachment.json' type='application/json' size='83'/>
+                        <attachment title='Response' source='3dfaea98-8f8e-454d-81f4-c29cad4893c7-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662082911808' status='passed' stop='1662082911820'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='db5f1db6-6928-484d-b6e9-f9f6b9c5822e-attachment.json' type='application/json' size='83'/>
+                        <attachment title='Response' source='e7883ad2-9954-4745-ae82-c37f21b78331-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662082911822' status='broken' stop='1662082916116'>
+                    <name>POST /session/:sessionId/element/02b55d81-0f23-4e28-b7a7-87ea2fa0971a/click</name>
+                    <title>POST /session/:sessionId/element/02b55d81-0f23-4e28-b7a7-87ea2fa0971a/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element click intercepted: element click intercepted: Element &lt;button data-stid="date-picker-paging" type="button" class="uitk-button uitk-button-medium uitk-button-only-icon uitk-layout-flex-item uitk-button-paging" disabled="">...&lt;/button> is not clickable at point (416, 218). Other element would receive the click: &lt;div class="uitk-layout-flex uitk-layout-flex-justify-content-space-between uitk-date-picker-menu-pagination-container">...&lt;/div></message>
+                <stack-trace>element click intercepted: element click intercepted: Element &lt;button data-stid="date-picker-paging" type="button" class="uitk-button uitk-button-medium uitk-button-only-icon uitk-layout-flex-item uitk-button-paging" disabled="">...&lt;/button> is not clickable at point (416, 218). Other element would receive the click: &lt;div class="uitk-layout-flex uitk-layout-flex-justify-content-space-between uitk-date-picker-menu-pagination-container">...&lt;/div>
+                  (Session info: chrome=105.0.5195.52)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662082916117' status='passed' stop='1662082916117'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

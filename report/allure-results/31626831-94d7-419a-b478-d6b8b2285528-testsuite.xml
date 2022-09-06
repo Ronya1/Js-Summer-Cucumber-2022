@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662213244972' stop='1662213256336'>
+    <name>Homepage Calendar</name>
+    <title>Homepage Calendar</title>
+    <test-cases>
+        <test-case start='1662213245120' status='passed' stop='1662213256334'>
+            <name>Verify past dates of current month are displayed</name>
+            <title>Verify past dates of current month are displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-5'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662213245123' status='passed' stop='1662213254647'>
+                    <name>Given I am on hotels homepage</name>
+                    <title>Given I am on hotels homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213254647' status='passed' stop='1662213256181'>
+                    <name>When I click on Dates button on Homepage</name>
+                    <title>When I click on Dates button on Homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213256181' status='passed' stop='1662213256284'>
+                    <name>Then I verify past dates on current month are displayed</name>
+                    <title>Then I verify past dates on current month are displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -9,6 +9,8 @@ class Searchpage {
 
     async isDestinationContainsUserDestination(userDestination) {
         const destinationOnSearch = await this.commands.getTextFromWebElement(this.destinationLocator);
+        console.log(`\n\ndestinationOnSearch -> ${destinationOnSearch}\n\n`);
+        console.log(`\n\nuserDestination -> ${userDestination}\n\n`);
         return destinationOnSearch.toLowerCase().includes(userDestination.toLowerCase());
     }
 

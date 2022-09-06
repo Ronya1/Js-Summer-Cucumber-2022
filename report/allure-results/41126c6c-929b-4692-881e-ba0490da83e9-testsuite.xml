@@ -1,0 +1,173 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662213272168' stop='1662213272216'>
+    <name>Search</name>
+    <title>Search</title>
+    <test-cases>
+        <test-case start='1662213272206' status='broken' stop='1662213272212'>
+            <name>Verify user entered data is correctly displayed on Search page</name>
+            <title>Verify user entered data is correctly displayed on Search page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-7'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662213272208' status='broken' stop='1662213272209'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272209' status='canceled' stop='1662213272209'>
+                    <name>When I enter "new" in going to</name>
+                    <title>When I enter "new" in going to</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272209' status='canceled' stop='1662213272209'>
+                    <name>And I select "MANHATTAN" from auto-suggestion</name>
+                    <title>And I select "MANHATTAN" from auto-suggestion</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272210' status='broken' stop='1662213272210'>
+                    <name>And I select "December 25 2022" as check-in date</name>
+                    <title>And I select "December 25 2022" as check-in date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272210' status='broken' stop='1662213272210'>
+                    <name>And I select "January 5 2022" as check-out date</name>
+                    <title>And I select "January 5 2022" as check-out date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272211' status='canceled' stop='1662213272211'>
+                    <name>And I click on search button on Homepage</name>
+                    <title>And I click on search button on Homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272211' status='canceled' stop='1662213272211'>
+                    <name>Then I verify going to location contains "MANHATTAN"</name>
+                    <title>Then I verify going to location contains "MANHATTAN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272211' status='broken' stop='1662213272211'>
+                    <name>And I verify "December 25 2022" as check-in date</name>
+                    <title>And I verify "December 25 2022" as check-in date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272211' status='broken' stop='1662213272212'>
+                    <name>And I verify "January 5 2022" as check-out date</name>
+                    <title>And I verify "January 5 2022" as check-out date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272212' status='broken' stop='1662213272212'>
+                    <name>And I verify "MANHATTAN" filter is added</name>
+                    <title>And I verify "MANHATTAN" filter is added</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify "MANHATTAN" filter is added" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify "MANHATTAN" filter is added" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/Hotels/search.feature):1:1
+                	at Scenario(Verify user entered data is correctly displayed on Search page):5:5
+                	at Step(I verify "MANHATTAN" filter is added):15:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1662213272213' status='broken' stop='1662213272215'>
+            <name>Verify user can search hotel with tomorrow as check-in date</name>
+            <title>Verify user can search hotel with tomorrow as check-in date</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-7'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662213272213' status='broken' stop='1662213272213'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272213' status='canceled' stop='1662213272214'>
+                    <name>When I enter "new" in going to</name>
+                    <title>When I enter "new" in going to</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272214' status='canceled' stop='1662213272214'>
+                    <name>And I select "MANHATTAN" from auto-suggestion</name>
+                    <title>And I select "MANHATTAN" from auto-suggestion</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272214' status='broken' stop='1662213272214'>
+                    <name>And I select "Tomorrow" as check-in date</name>
+                    <title>And I select "Tomorrow" as check-in date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272214' status='broken' stop='1662213272214'>
+                    <name>And I select "5" days from check-in as check-out date</name>
+                    <title>And I select "5" days from check-in as check-out date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272214' status='canceled' stop='1662213272214'>
+                    <name>And I click on search button on Homepage</name>
+                    <title>And I click on search button on Homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272214' status='canceled' stop='1662213272214'>
+                    <name>Then I verify going to location contains "MANHATTAN"</name>
+                    <title>Then I verify going to location contains "MANHATTAN"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272214' status='broken' stop='1662213272215'>
+                    <name>And I verify "Tomorrow" as check-in date</name>
+                    <title>And I verify "Tomorrow" as check-in date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272215' status='broken' stop='1662213272215'>
+                    <name>And I verify "5" days from check-in as check-out date</name>
+                    <title>And I verify "5" days from check-in as check-out date</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662213272215' status='broken' stop='1662213272215'>
+                    <name>And I verify "MANHATTAN" is added</name>
+                    <title>And I verify "MANHATTAN" is added</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify "MANHATTAN" is added" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify "MANHATTAN" is added" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/Hotels/search.feature):1:1
+                	at Scenario(Verify user can search hotel with tomorrow as check-in date):18:5
+                	at Step(I verify "MANHATTAN" is added):28:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

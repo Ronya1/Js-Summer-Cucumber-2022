@@ -1,0 +1,130 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661997301107' stop='1661997301904'>
+    <name>Login: Verify user get error for invalid credentials</name>
+    <title>Login: Verify user get error for invalid credentials</title>
+    <test-cases>
+        <test-case start='1661997301108' status='passed' stop='1661997301109'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661997301109' status='passed' stop='1661997301896'>
+            <name>Given I am on facebook landing page</name>
+            <title>Given I am on facebook landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps>
+                <step start='1661997301111' status='passed' stop='1661997301149'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7d4b3648-41af-4bac-b2fc-7492f0c83426-attachment.json' type='application/json' size='40'/>
+                        <attachment title='Response' source='0e7d580a-d90c-4642-99a8-b9e773868c84-attachment.json' type='application/json' size='1965'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='ecf3fa78-febe-49e4-9d86-f90f1eeef8f2-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='8f7c06f9-81c5-48ae-b2bd-948f5de4aab5-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='a5c3b681-64db-4e1b-8fd6-1a60ef1ff763-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='dc6c3ef7-4155-4091-9c2b-f6bc247eaa65-attachment.json' type='application/json' size='1946'/>
+                <attachment title='Response' source='5455f072-1720-4865-b445-8f8e4ca4f1d0-attachment.json' type='application/json' size='1956'/>
+                <attachment title='Response' source='266e15cd-ba50-4f21-856b-dd83a677eee3-attachment.json' type='application/json' size='1965'/>
+                <attachment title='Response' source='d5566d0b-c00d-4826-89fd-b6c9225287de-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='f4e5f127-6d2a-4926-b729-e982cd384cfa-attachment.json' type='application/json' size='2081'/>
+                <attachment title='Response' source='e8529f6f-ad93-4bb5-9d70-a7110c35148a-attachment.json' type='application/json' size='2'/>
+                <attachment title='Response' source='26a00ee4-c8c6-4fee-a1b5-f29796595ed8-attachment.json' type='application/json' size='1951'/>
+                <attachment title='Response' source='8c45df6a-2f18-4076-b851-41fdf20e71ce-attachment.json' type='application/json' size='1998'/>
+                <attachment title='Response' source='10eb48e4-59e6-40b3-acc4-ea0753c01e5c-attachment.json' type='application/json' size='1953'/>
+                <attachment title='Response' source='5bcf11a6-fa17-48ee-8469-28010194c023-attachment.json' type='application/json' size='1951'/>
+                <attachment title='Response' source='a5766e24-7736-4a3c-8b72-26efd8590f49-attachment.json' type='application/json' size='1958'/>
+            </attachments>
+        </test-case>
+        <test-case start='1661997301896' status='pending' stop='1661997301901'>
+            <name>When I enter "@#$%^^^" as username</name>
+            <title>When I enter "@#$%^^^" as username</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661997301901' status='pending' stop='1661997301901'>
+            <name>And I enter "invalidPwd" as password</name>
+            <title>And I enter "invalidPwd" as password</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661997301901' status='pending' stop='1661997301903'>
+            <name>And I click login button</name>
+            <title>And I click login button</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661997301903' status='pending' stop='1661997301903'>
+            <name>Then I verify error is displayed</name>
+            <title>Then I verify error is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1661997301903' status='passed' stop='1661997301904'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.52'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

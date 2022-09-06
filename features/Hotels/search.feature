@@ -1,25 +1,28 @@
+@hotelsSearch @hotels
 Feature: Search
 
-    @hotels-1
-    Scenario: Verify search location is displayed on Search page - 1
+    @search-1 @sanity
+    Scenario: Verify user entered data is correctly displayed on Search page
         Given I am on hotels landing page
         When I enter "new" in going to
         And I select "MANHATTAN" from auto-suggestion
-        And I click on search button
-        Then I verify going to location contains ""MANHATTAN"
+        And I select "December 25 2022" as check-in date
+        And I select "January 5 2022" as check-out date
+        And I click on search button on Homepage
+        Then I verify going to location contains "MANHATTAN"
+        And I verify "December 25 2022" as check-in date
+        And I verify "January 5 2022" as check-out date
+        And I verify "MANHATTAN" filter is added
 
-@hotels-2 @sanity
-    Scenario: Verify search location is displayed on Search page - 2
+    @search-2
+    Scenario: Verify user can search hotel with tomorrow as check-in date
         Given I am on hotels landing page
-        When I enter "NEW" in going to
+        When I enter "new" in going to
         And I select "MANHATTAN" from auto-suggestion
-        And I click on search button
-        Then I verify going to location contains ""MANHATTAN"
-
-    @hotels-3 @imp
-    Scenario: Verify search location is displayed on Search page - 3
-        Given I am on hotels landing page
-        When I enter "NeW" in going to
-        And I select "MANHATTAN" from auto-suggestion
-        And I click on search button
-        Then I verify going to location contains ""MANHATTAN"
+        And I select "Tomorrow" as check-in date
+        And I select "5" days from check-in as check-out date
+        And I click on search button on Homepage
+        Then I verify going to location contains "MANHATTAN"
+        And I verify "Tomorrow" as check-in date
+        And I verify "5" days from check-in as check-out date
+        And I verify "MANHATTAN" is added
