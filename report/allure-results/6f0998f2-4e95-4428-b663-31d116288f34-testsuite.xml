@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662589392519' stop='1662589398331'>
+    <name>Homepage</name>
+    <title>Homepage</title>
+    <test-cases>
+        <test-case start='1662589393072' status='passed' stop='1662589398331'>
+            <name>Verify number of links in Church Chairs menu</name>
+            <title>Verify number of links in Church Chairs menu</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662589393074' status='passed' stop='1662589397518'>
+                    <name>Given I am on classroom essentails homepage</name>
+                    <title>Given I am on classroom essentails homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662589397519' status='passed' stop='1662589398309'>
+                    <name>When I move mouse on Church Chairs</name>
+                    <title>When I move mouse on Church Chairs</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662589398309' status='passed' stop='1662589398330'>
+                    <name>Then I verify 7 options are displayed</name>
+                    <title>Then I verify 7 options are displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
