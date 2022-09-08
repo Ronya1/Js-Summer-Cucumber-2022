@@ -16,22 +16,19 @@ Given(/^I am on darksky.net123$/, async function() {
 
 Then(/^I Verify timeline has 12-data points with 2 hours gap from current hour$/, async function() {
     let allHours = await $$('//div[@class="hours"][1]/span/following-sibling::span[1]/span')
-    const now = moment().format('a')
-    let counter = moment(now).add(2, 'hours')
+    const now = moment().format('h')
+    let compareArr =[] //to add moment comparison values later, since moment messes up the counter
+    let startdate = moment(now);
+    let counter = moment(startdate).add(1, 'hours').format('h')
+    console.log('AAAAAAAAAAA' + now);
 
     for (let i = 0 ; i < allHours.length ; i++){
-        console.log(`BBBBBBB ` + allHours[i].getText());
-        let currentHour = allHours[i].getText()
-        //currentHour.substr(0,2)
-        console.log('DDDDDDD' + currentHour);
-       // expect(currentHour,'Not equal').to.eql(counter)
-       expect(currentHour==counter, "fail the testcase").to.be.true;
-        counter = moment(counter).add(2, 'hours')
-        console.log('DDDDDDD' + currentHour);
-        //allHours[i] == timeNow+2
+        let currentHour = await allHours[i].getText()
+        console.log('DDDDDDD' + counter);
+       expect(currentHour, 'temp not matching').to.include(counter)
+        counter = moment(counter).add(3, 'hours').format('h')
+        console.log('FFFFFFF' + counter);
     }
-    // let allHours2 = - await allHours.getText()
-    //console.log(`AAAAA ${allHours}`);
 });
 
 
