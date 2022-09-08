@@ -55,28 +55,20 @@ Given(/^I am on darksky.net1234$/, async function() {
 });
 
 When(/^I Scroll to Today's timeline$/, async function() {
-    // await $('//div[@id="week"]').scrollIntoView()
-    // await browser.pause(3000)
     await DST.scrollToToday()
 });
 
 Then(/^I Click on plus button$/, async function() {
-    await $('//a[@data-day="0"]').click()
-    await browser.pause(3000)
+    await DST.clickPlusButton()
 });
 
 Then(/^I Verify minTemp on and in Today's timeline is same$/, async function() {
-    let topWeatherLow = await $('//a[@data-day="0"]//span[@class="minTemp"]').getText()
-    console.log(`AAAA ${topWeatherLow}`);
-    let bottomWeatherLow = await $('//div[@class="dayDetails revealed"]//div[@class="summary_container"]//span[@class="highTemp swip"]//span[@class="temp"]').getText()
-    expect(topWeatherLow, 'temp not matching').to.equal(bottomWeatherLow)
+    await DST.verifyMinTemp()
+
 });
 
 Then(/^I Verify maxTemp on and in Today's timeline is same$/, async function() {
-    let TopWeatherHigh = await $('//a[@data-day="0"]//span[@class="maxTemp"]').getText()
-    let bottomWeatherHigh = await $('//div[@class="dayDetails revealed"]//div[@class="summary_container"]//span[@class="lowTemp swap"]//span[@class="temp"]').getText()
-    expect(TopWeatherHigh, 'temp not matching').to.equal(bottomWeatherHigh)
-
+    await DST.verifyMaxTemp()
 });
 
 
