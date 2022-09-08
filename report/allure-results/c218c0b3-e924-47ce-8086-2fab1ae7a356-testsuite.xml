@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662596365851' stop='1662596368530'>
+    <name>Darksky Final Test</name>
+    <title>Darksky Final Test</title>
+    <test-cases>
+        <test-case start='1662596365889' status='broken' stop='1662596368529'>
+            <name>Verify DarkSky 2 Hour Gaps</name>
+            <title>Verify DarkSky 2 Hour Gaps</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662596365894' status='passed' stop='1662596368528'>
+                    <name>Given I am on darksky.net123</name>
+                    <title>Given I am on darksky.net123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662596368528' status='broken' stop='1662596368528'>
+                    <name>Then I Verify timeline has 12-data points with 2 hours gap from current hour</name>
+                    <title>Then I Verify timeline has 12-data points with 2 hours gap from current hour</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I Verify timeline has 12-data points with 2 hours gap from current hour" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I Verify timeline has 12-data points with 2 hours gap from current hour" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/Darksky/DarkskyFinalTest.feature):1:1
+                	at Scenario(Verify DarkSky 2 Hour Gaps):4:9
+                	at Step(I Verify timeline has 12-data points with 2 hours gap from current hour):6:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

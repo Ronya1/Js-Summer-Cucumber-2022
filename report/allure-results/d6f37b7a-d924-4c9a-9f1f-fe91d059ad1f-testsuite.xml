@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662604331637' stop='1662604347206'>
+    <name>Hotels Test Feature</name>
+    <title>Hotels Test Feature</title>
+    <test-cases>
+        <test-case start='1662604331683' status='passed' stop='1662604347206'>
+            <name>Verify Hotels Rewards Feature</name>
+            <title>Verify Hotels Rewards Feature</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-7'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662604331686' status='passed' stop='1662604338392'>
+                    <name>Given I am on hotels homepage123</name>
+                    <title>Given I am on hotels homepage123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662604338392' status='passed' stop='1662604339514'>
+                    <name>When I Click on Learn about Hotels.com Rewards</name>
+                    <title>When I Click on Learn about Hotels.com Rewards</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662604339514' status='passed' stop='1662604339656'>
+                    <name>Then I verify Hotels Rewards opened in a new window</name>
+                    <title>Then I verify Hotels Rewards opened in a new window</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662604339656' status='passed' stop='1662604342982'>
+                    <name>When I Click on Join Now</name>
+                    <title>When I Click on Join Now</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662604342982' status='passed' stop='1662604347170'>
+                    <name>Then I Verify Form is blank123</name>
+                    <title>Then I Verify Form is blank123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662604347170' status='passed' stop='1662604347204'>
+                    <name>Then I Verify Continue button is NOT enabled</name>
+                    <title>Then I Verify Continue button is NOT enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

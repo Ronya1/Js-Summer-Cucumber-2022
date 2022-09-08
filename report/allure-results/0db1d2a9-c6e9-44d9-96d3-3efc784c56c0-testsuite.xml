@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662603806268' stop='1662603820127'>
+    <name>Darksky Final Test</name>
+    <title>Darksky Final Test</title>
+    <test-cases>
+        <test-case start='1662603806416' status='failed' stop='1662603820125'>
+            <name>Verify DarkSky Test 2</name>
+            <title>Verify DarkSky Test 2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662603806419' status='passed' stop='1662603813635'>
+                    <name>Given I am on darksky.net1234</name>
+                    <title>Given I am on darksky.net1234</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662603813635' status='passed' stop='1662603816692'>
+                    <name>When I Scroll to Today's timeline</name>
+                    <title>When I Scroll to Today's timeline</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662603816692' status='passed' stop='1662603819967'>
+                    <name>And I Click on plus button</name>
+                    <title>And I Click on plus button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662603819967' status='failed' stop='1662603820125'>
+                    <name>Then I Verify minTemp on and in Today's timeline is same</name>
+                    <title>Then I Verify minTemp on and in Today's timeline is same</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='07a73053-9912-47d2-af75-f0ed6137b519-attachment.png' type='image/png' size='94761'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662603820125' status='canceled' stop='1662603820125'>
+                    <name>Then I Verify maxTemp on and in Today's timeline is same</name>
+                    <title>Then I Verify maxTemp on and in Today's timeline is same</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: temp not matching: expected Promise{…} to equal Promise{…}</message>
+                <stack-trace>AssertionError: temp not matching: expected Promise{…} to equal Promise{…}
+                    + expected - actual
+                
+                
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Darksky/DarkskyTestSD.js:68:61)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
