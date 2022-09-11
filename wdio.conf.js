@@ -144,7 +144,7 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['allure', {
+    reporters: ['spec', ['allure', {
         outputDir: './report/allure-results', // outlines where reports will be stores, we can define it ourselves. 
         disableWebdriverStepsReporting: true, // means when the test run the driver also generates steps to enter into reporting 
         useCucumberStepReporter: true,
