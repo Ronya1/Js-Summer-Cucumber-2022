@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662594497911' stop='1662594507136'>
+    <name>Hotels Test Feature</name>
+    <title>Hotels Test Feature</title>
+    <test-cases>
+        <test-case start='1662594498076' status='broken' stop='1662594507134'>
+            <name>Verify Hotels Rewards Feature</name>
+            <title>Verify Hotels Rewards Feature</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662594498079' status='passed' stop='1662594504806'>
+                    <name>Given I am on hotels homepage123</name>
+                    <title>Given I am on hotels homepage123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662594504806' status='passed' stop='1662594506072'>
+                    <name>When I Click on Learn about Hotels.com Rewards</name>
+                    <title>When I Click on Learn about Hotels.com Rewards</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662594506072' status='broken' stop='1662594507134'>
+                    <name>Then I verify Hotels Rewards opened in a new window</name>
+                    <title>Then I verify Hotels Rewards opened in a new window</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d7879e82-3e9a-471e-8642-787cb4e39d99-attachment.png' type='image/png' size='887834'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: Assignment to constant variable.</message>
+                <stack-trace>TypeError: Assignment to constant variable.
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/rewardsSD.js:29:26)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

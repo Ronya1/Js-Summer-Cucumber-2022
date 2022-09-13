@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662599899464' stop='1662599902726'>
+    <name>Darksky Final Test</name>
+    <title>Darksky Final Test</title>
+    <test-cases>
+        <test-case start='1662599899760' status='broken' stop='1662599902725'>
+            <name>Verify DarkSky 2 Hour Gaps</name>
+            <title>Verify DarkSky 2 Hour Gaps</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662599899766' status='passed' stop='1662599902519'>
+                    <name>Given I am on darksky.net123</name>
+                    <title>Given I am on darksky.net123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662599902519' status='broken' stop='1662599902725'>
+                    <name>Then I Verify timeline has 12-data points with 2 hours gap from current hour</name>
+                    <title>Then I Verify timeline has 12-data points with 2 hours gap from current hour</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='50ef6ed1-7ccf-440f-88b7-e41f1f253805-attachment.png' type='image/png' size='430604'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: currentHour.subtring is not a function</message>
+                <stack-trace>TypeError: currentHour.subtring is not a function
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Darksky/DarkskyTestSD.js:21:21)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

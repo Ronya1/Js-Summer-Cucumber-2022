@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662592946722' stop='1662592946906'>
+    <name>Hotels Test Feature</name>
+    <title>Hotels Test Feature</title>
+    <test-cases>
+        <test-case start='1662592946864' status='pending' stop='1662592946905'>
+            <name>Verify Hotels Rewards Feature</name>
+            <title>Verify Hotels Rewards Feature</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662592946873' status='canceled' stop='1662592946903'>
+                    <name>Given I am on hotels homepage</name>
+                    <title>Given I am on hotels homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662592946903' status='canceled' stop='1662592946903'>
+                    <name>When I Click on Learn about Hotels.com Rewards</name>
+                    <title>When I Click on Learn about Hotels.com Rewards</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662592946903' status='canceled' stop='1662592946903'>
+                    <name>Then I verify Hotels Rewards opened in a new window</name>
+                    <title>Then I verify Hotels Rewards opened in a new window</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

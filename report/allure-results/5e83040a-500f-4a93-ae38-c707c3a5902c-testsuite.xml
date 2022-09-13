@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662595609646' stop='1662595621604'>
+    <name>Hotels Test Feature</name>
+    <title>Hotels Test Feature</title>
+    <test-cases>
+        <test-case start='1662595609861' status='broken' stop='1662595621603'>
+            <name>Verify Hotels Rewards Feature</name>
+            <title>Verify Hotels Rewards Feature</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-6'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662595609863' status='passed' stop='1662595616498'>
+                    <name>Given I am on hotels homepage123</name>
+                    <title>Given I am on hotels homepage123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662595616498' status='passed' stop='1662595617714'>
+                    <name>When I Click on Learn about Hotels.com Rewards</name>
+                    <title>When I Click on Learn about Hotels.com Rewards</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662595617714' status='passed' stop='1662595618109'>
+                    <name>Then I verify Hotels Rewards opened in a new window</name>
+                    <title>Then I verify Hotels Rewards opened in a new window</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662595618109' status='passed' stop='1662595621472'>
+                    <name>When I Click on Join Now</name>
+                    <title>When I Click on Join Now</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662595621472' status='broken' stop='1662595621603'>
+                    <name>Then I Verify Form is blank123</name>
+                    <title>Then I Verify Form is blank123</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='975018ed-ac68-413c-98af-d29176f38e8d-attachment.png' type='image/png' size='51409'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: function uses multiple asynchronous interfaces: callback and promise</message>
+                <stack-trace>Error: function uses multiple asynchronous interfaces: callback and promise
+                to use the callback interface: do not return a promise
+                to use the promise interface: remove the last argument to the function
+                    at Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:35:24)
+                    at Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:59)
+                    at async TestCaseRunner.invokeStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48
+                    at async TestCaseRunner.aroundTestStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:117:32)
+                    at async TestCaseRunner.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:146:17)
+                    at async Runtime.runTestCase (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/index.js:41:24)
+                    at async Runtime.start (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/index.js:65:13)
+                    at async CucumberAdapter.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/cucumber-framework/build/index.js:168:22)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

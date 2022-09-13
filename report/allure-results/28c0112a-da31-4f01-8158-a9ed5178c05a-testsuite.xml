@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662608967765' stop='1662608972762'>
+    <name>Darksky Final Test</name>
+    <title>Darksky Final Test</title>
+    <test-cases>
+        <test-case start='1662608967949' status='failed' stop='1662608972761'>
+            <name>Verify DarkSky 2 Hour Gaps</name>
+            <title>Verify DarkSky 2 Hour Gaps</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1662608967951' status='passed' stop='1662608972559'>
+                    <name>Given I am on darksky.net123</name>
+                    <title>Given I am on darksky.net123</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662608972559' status='failed' stop='1662608972761'>
+                    <name>Then I Verify timeline has 12-data points with 2 hours gap from current hour</name>
+                    <title>Then I Verify timeline has 12-data points with 2 hours gap from current hour</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='5dd47735-ce30-4f33-9902-65c37ca3a531-attachment.png' type='image/png' size='427260'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: temp not matching: expected '5am' to include '3'</message>
+                <stack-trace>AssertionError: temp not matching: expected '5am' to include '3'
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Darksky/DarkskyTestSD.js:27:52)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662602414490' stop='1662602434380'>
+    <name>Darksky Final Test</name>
+    <title>Darksky Final Test</title>
+    <test-cases>
+        <test-case start='1662602414602' status='passed' stop='1662602434380'>
+            <name>Verify DarkSky Test 2</name>
+            <title>Verify DarkSky Test 2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662602414605' status='passed' stop='1662602421698'>
+                    <name>Given I am on darksky.net1234</name>
+                    <title>Given I am on darksky.net1234</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662602421698' status='passed' stop='1662602424772'>
+                    <name>When I Scroll to Today's timeline</name>
+                    <title>When I Scroll to Today's timeline</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662602424772' status='passed' stop='1662602427871'>
+                    <name>And I Click on plus button</name>
+                    <title>And I Click on plus button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662602427872' status='passed' stop='1662602431116'>
+                    <name>Then I Verify minTemp on and in Today's timeline is same</name>
+                    <title>Then I Verify minTemp on and in Today's timeline is same</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662602431116' status='passed' stop='1662602434379'>
+                    <name>Then I Verify maxTemp on and in Today's timeline is same</name>
+                    <title>Then I Verify maxTemp on and in Today's timeline is same</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

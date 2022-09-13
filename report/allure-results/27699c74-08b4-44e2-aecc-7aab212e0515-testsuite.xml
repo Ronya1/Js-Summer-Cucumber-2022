@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1662603291095' stop='1662603304738'>
+    <name>Darksky Final Test</name>
+    <title>Darksky Final Test</title>
+    <test-cases>
+        <test-case start='1662603291364' status='failed' stop='1662603304736'>
+            <name>Verify DarkSky Test 2</name>
+            <title>Verify DarkSky Test 2</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps>
+                <step start='1662603291373' status='passed' stop='1662603298430'>
+                    <name>Given I am on darksky.net1234</name>
+                    <title>Given I am on darksky.net1234</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662603298430' status='passed' stop='1662603301493'>
+                    <name>When I Scroll to Today's timeline</name>
+                    <title>When I Scroll to Today's timeline</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662603301493' status='passed' stop='1662603304584'>
+                    <name>And I Click on plus button</name>
+                    <title>And I Click on plus button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1662603304584' status='failed' stop='1662603304736'>
+                    <name>Then I Verify minTemp on and in Today's timeline is same</name>
+                    <title>Then I Verify minTemp on and in Today's timeline is same</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3519ba9b-b51a-45d9-a231-97e856f2070b-attachment.png' type='image/png' size='77848'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1662603304737' status='canceled' stop='1662603304737'>
+                    <name>Then I Verify maxTemp on and in Today's timeline is same</name>
+                    <title>Then I Verify maxTemp on and in Today's timeline is same</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: temp not matching: expected Promise{…} to equal Promise{…}</message>
+                <stack-trace>AssertionError: temp not matching: expected Promise{…} to equal Promise{…}
+                    + expected - actual
+                
+                
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Darksky/DarkskyTestSD.js:67:51)
+                    at async wrapPromiseWithTimeout (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/time.js:67:12)
+                    at async Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+                    at async Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+                    at async TestCaseRunner.invokeStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48
+                    at async TestCaseRunner.aroundTestStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:117:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
