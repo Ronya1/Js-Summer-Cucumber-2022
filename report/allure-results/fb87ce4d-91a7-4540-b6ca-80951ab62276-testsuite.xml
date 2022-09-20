@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663633452423' stop='1663633466506'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663633452528' status='broken' stop='1663633466504'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663633452531' status='passed' stop='1663633465821'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663633465821' status='broken' stop='1663633466504'>
+                    <name>When I Click on Travelers</name>
+                    <title>When I Click on Travelers</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='0bbdd84c-924a-4791-b272-dbdda4889854-attachment.png' type='image/png' size='2692689'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable: Element &lt;span class="is-visually-hidden"> could not be scrolled into view</message>
+                <stack-trace>element not interactable: Element &lt;span class="is-visually-hidden"> could not be scrolled into view
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

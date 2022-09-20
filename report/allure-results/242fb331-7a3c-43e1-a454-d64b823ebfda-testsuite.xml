@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663632683895' stop='1663632740661'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663632683941' status='broken' stop='1663632740659'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663632683944' status='broken' stop='1663632740659'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: no such window: window was already closed</message>
+                <stack-trace>no such window: no such window: window was already closed
+                  (Session info: chrome=105.0.5195.125)
+                    at getErrorFromResponseBody (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriver/build/utils.js:198:12)
+                    at NodeJSRequest._request (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriver/build/request/index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)
+                    at async Browser.$ (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriverio/build/commands/browser/$.js:91:17)
+                    at async Browser.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
