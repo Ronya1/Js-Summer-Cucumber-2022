@@ -1,0 +1,88 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663721305665' stop='1663721325134'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663721305719' status='failed' stop='1663721325133'>
+            <name>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</name>
+            <title>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663721305765' status='passed' stop='1663721315995'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721315995' status='passed' stop='1663721317152'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721317152' status='passed' stop='1663721320491'>
+                    <name>And I Click Sign up link</name>
+                    <title>And I Click Sign up link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721320491' status='passed' stop='1663721321522'>
+                    <name>And I Enter invalid email address with at least @ symbol #!@###</name>
+                    <title>And I Enter invalid email address with at least @ symbol #!@###</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721321522' status='passed' stop='1663721322103'>
+                    <name>Then I Verify error is displayed Enter a valid email address</name>
+                    <title>Then I Verify error is displayed Enter a valid email address</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721322104' status='passed' stop='1663721322920'>
+                    <name>And I Enter invalid first name !@</name>
+                    <title>And I Enter invalid first name !@</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721322921' status='passed' stop='1663721323482'>
+                    <name>Then I Verify error is displayed First name cannot contain special characters</name>
+                    <title>Then I Verify error is displayed First name cannot contain special characters</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721323482' status='passed' stop='1663721324454'>
+                    <name>And I Enter invalid last name %&lt;&amp;</name>
+                    <title>And I Enter invalid last name %&lt;&amp;</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663721324455' status='failed' stop='1663721325132'>
+                    <name>Then I Verify error is displayed Last name cannot contain special characters</name>
+                    <title>Then I Verify error is displayed Last name cannot contain special characters</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='007906ab-7279-4661-b613-36ab3914ee5e-attachment.png' type='image/png' size='65048'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Error Message is Not Displayed: expected true to be false</message>
+                <stack-trace>AssertionError: Error Message is Not Displayed: expected true to be false
+                    + expected - actual
+                
+                    -true
+                    +false
+                
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/HomepageS1SD.js:244:72)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

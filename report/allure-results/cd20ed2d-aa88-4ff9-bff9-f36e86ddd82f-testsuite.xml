@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663716317134' stop='1663716330665'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663716317181' status='broken' stop='1663716330663'>
+            <name>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</name>
+            <title>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663716317183' status='passed' stop='1663716325979'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663716325980' status='passed' stop='1663716327192'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663716327192' status='passed' stop='1663716330378'>
+                    <name>And I click Sign in</name>
+                    <title>And I click Sign in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663716330378' status='broken' stop='1663716330663'>
+                    <name>And I Enter invalid email address</name>
+                    <title>And I Enter invalid email address</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='17b7390e-d3c6-472f-848f-6c58ba8e9b9c-attachment.png' type='image/png' size='45932'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid element state: invalid element state</message>
+                <stack-trace>invalid element state: invalid element state
+                  (Session info: chrome=105.0.5195.125)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

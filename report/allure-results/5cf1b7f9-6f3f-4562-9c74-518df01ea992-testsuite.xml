@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663717820309' stop='1663717847493'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663717820405' status='broken' stop='1663717847491'>
+            <name>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</name>
+            <title>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663717820408' status='passed' stop='1663717830018'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717830018' status='passed' stop='1663717831332'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717831332' status='passed' stop='1663717837185'>
+                    <name>And I click Sign in</name>
+                    <title>And I click Sign in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717837185' status='broken' stop='1663717847490'>
+                    <name>And I Enter invalid email address0211</name>
+                    <title>And I Enter invalid email address0211</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='20295d73-8eca-4816-9f84-1bdd8c6ff2f3-attachment.png' type='image/png' size='823893'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663717847491' status='canceled' stop='1663717847491'>
+                    <name>And I Enter invalid password</name>
+                    <title>And I Enter invalid password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717847491' status='canceled' stop='1663717847491'>
+                    <name>And I Click on Sign in button</name>
+                    <title>And I Click on Sign in button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717847491' status='canceled' stop='1663717847491'>
+                    <name>Then I Verify Verification message is displayed.</name>
+                    <title>Then I Verify Verification message is displayed.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call setValue on element with selector "//input[@id="loginFormEmailInput"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "//input[@id="loginFormEmailInput"]" because element wasn't found
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/HomepageS1SD.js:150:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

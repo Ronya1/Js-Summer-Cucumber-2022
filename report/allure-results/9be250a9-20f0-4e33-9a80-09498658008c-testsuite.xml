@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663717716442' stop='1663717738043'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663717716493' status='failed' stop='1663717738042'>
+            <name>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</name>
+            <title>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663717716495' status='passed' stop='1663717726319'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717726319' status='passed' stop='1663717727468'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717727468' status='passed' stop='1663717730218'>
+                    <name>And I click Sign in</name>
+                    <title>And I click Sign in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717730218' status='passed' stop='1663717730968'>
+                    <name>And I Enter invalid email address0211</name>
+                    <title>And I Enter invalid email address0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717730968' status='passed' stop='1663717731653'>
+                    <name>And I Enter invalid password</name>
+                    <title>And I Enter invalid password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717731653' status='passed' stop='1663717736807'>
+                    <name>And I Click on Sign in button</name>
+                    <title>And I Click on Sign in button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663717736807' status='failed' stop='1663717738042'>
+                    <name>Then I Verify Verification message is displayed.</name>
+                    <title>Then I Verify Verification message is displayed.</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a2b145d8-2218-42e2-b974-0123382db5d4-attachment.png' type='image/png' size='53553'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: expect(...).to.be is not a function</message>
+                <stack-trace>TypeError: expect(...).to.be is not a function
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/HomepageS1SD.js:171:89)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
