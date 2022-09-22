@@ -1,0 +1,59 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663802554714' stop='1663802569440'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663802554822' status='broken' stop='1663802569434'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663802554826' status='passed' stop='1663802559249'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802559249' status='broken' stop='1663802569434'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='f153897d-6209-432f-97ae-b8154d7f0888-attachment.png' type='image/png' size='22979'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663802569434' status='canceled' stop='1663802569434'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802569434' status='canceled' stop='1663802569434'>
+                    <name>And I Click on Submit button02</name>
+                    <title>And I Click on Submit button02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802569434' status='canceled' stop='1663802569434'>
+                    <name>Then I Verify error message is displayed "Please fill in the required information highlighted below."</name>
+                    <title>Then I Verify error message is displayed "Please fill in the required information highlighted below."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "//button[text()="Sign in"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//button[text()="Sign in"]" because element wasn't found
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/HomepageS1SD.js:87:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

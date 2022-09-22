@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663802750758' stop='1663802769522'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663802750807' status='passed' stop='1663802769521'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663802750809' status='passed' stop='1663802761952'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802761953' status='passed' stop='1663802763128'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802763128' status='passed' stop='1663802765377'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802765377' status='passed' stop='1663802769460'>
+                    <name>And I Click on Submit button02</name>
+                    <title>And I Click on Submit button02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802769460' status='passed' stop='1663802769519'>
+                    <name>Then I Verify error message is displayed "Please fill in the required information highlighted below."</name>
+                    <title>Then I Verify error message is displayed "Please fill in the required information highlighted below."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

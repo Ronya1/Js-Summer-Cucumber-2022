@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663802156869' stop='1663802169291'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663802157209' status='broken' stop='1663802169289'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663802157212' status='passed' stop='1663802165714'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802165714' status='passed' stop='1663802167001'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802167001' status='passed' stop='1663802169170'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663802169170' status='broken' stop='1663802169287'>
+                    <name>And I Click on Submit button</name>
+                    <title>And I Click on Submit button</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d3bcc1f6-612d-4d34-9f17-480acc8c6a4d-attachment.png' type='image/png' size='21039'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable: Element &lt;button id="submit-button" class="submit"> could not be scrolled into view</message>
+                <stack-trace>element not interactable: Element &lt;button id="submit-button" class="submit"> could not be scrolled into view
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663804004357' stop='1663804021406'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663804004450' status='broken' stop='1663804021404'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663804004453' status='passed' stop='1663804013659'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804013660' status='passed' stop='1663804014816'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804014816' status='passed' stop='1663804017115'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804017115' status='passed' stop='1663804018203'>
+                    <name>And I Select any star-rating</name>
+                    <title>And I Select any star-rating</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804018204' status='passed' stop='1663804021404'>
+                    <name>And I Enter any comments</name>
+                    <title>And I Enter any comments</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804021404' status='broken' stop='1663804021404'>
+                    <name>And I Select any option for “How likely are you to return to Hotels.com?”</name>
+                    <title>And I Select any option for “How likely are you to return to Hotels.com?”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I Select any option for “How likely are you to return to Hotels.com?”" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I Select any option for “How likely are you to return to Hotels.com?”" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/z-features-Sprint1/HomepageS1.feature):1:1
+                	at Scenario(Verify error is displayed when user submits the empty feedback form):66:1
+                	at Step(I Select any option for “How likely are you to return to Hotels.com?”):72:5
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663804736233' stop='1663804754193'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663804736378' status='broken' stop='1663804754192'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663804736380' status='passed' stop='1663804749500'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804749501' status='passed' stop='1663804750784'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804750784' status='passed' stop='1663804752958'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804752958' status='broken' stop='1663804754191'>
+                    <name>And I Select any star-rating</name>
+                    <title>And I Select any star-rating</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='b01269af-4dd4-42c6-810a-9d56a1c4699f-attachment.png' type='image/png' size='25636'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663804754192' status='canceled' stop='1663804754192'>
+                    <name>And I Enter any comments</name>
+                    <title>And I Enter any comments</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804754192' status='canceled' stop='1663804754192'>
+                    <name>And I Select any option for “How likely are you to return to Hotels.com”</name>
+                    <title>And I Select any option for “How likely are you to return to Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663804754192' status='canceled' stop='1663804754192'>
+                    <name>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</name>
+                    <title>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable: Element &lt;label class="radio-label"> could not be scrolled into view</message>
+                <stack-trace>element not interactable: Element &lt;label class="radio-label"> could not be scrolled into view
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
