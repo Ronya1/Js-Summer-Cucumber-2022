@@ -468,26 +468,92 @@ Then(/^I Verify Children-age dropdown are 2$/, async function() {
     let is1stChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-0"]`).isEnabled()
     console.log(`ISITDISPLAYED1? ${is1stChildDropDownDisplayed}`);
     expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
+    await browser.pause(1000)
 
     let is2ndChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-1"]`).isEnabled()
     console.log(`ISITDISPLAYED2? ${is2ndChildDropDownDisplayed}`);
     expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-
-    let plusButtonLocator = 
+    await browser.pause(1000)
 });
 
+Then(/^I Verify Plus-button is enabled$/, async function() { 
+    let plusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`)
+    let plusButtonEnabled = await plusButtonLocator.isEnabled()
+    console.log(`ISITWorking? ${plusButtonEnabled}`);
+    expect(plusButtonEnabled, 'Plus Button Is Not Enabled').to.be.true
+    await browser.pause(1000)
+});
 
+Then(/^I Verify minus-button is enabled$/, async function() { 
+    let minusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[1]`)
+    let minusButtonEnabled = await minusButtonLocator.isEnabled()
+    console.log(`ISITWorking? ${minusButtonEnabled}`);
+    expect(minusButtonEnabled, 'Plus Button Is Not Enabled').to.be.true
+    await browser.pause(1000)
+});
 
+When(/^I Select “Children” as 6$/, async function() { 
+    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
+    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
+    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
+    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
+    await browser.pause(1000)
+});
 
+Then(/^I Verify Children-age dropdown are 6$/, async function() { 
+    let is1stChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-0"]`).isEnabled()
+    console.log(`One? ${is1stChildDropDownDisplayed}`);
+    expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
+    await browser.pause(1000)
+
+    let is2ndChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-1"]`).isEnabled()
+    console.log(`TWO? ${is2ndChildDropDownDisplayed}`);
+    expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
+    await browser.pause(1000)
+
+    let is3rdChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-2"]`).isEnabled()
+    console.log(`THREE? ${is3rdChildDropDownDisplayed}`);
+    expect(is3rdChildDropDownDisplayed, 'Child 3 Is Not Displayed').to.be.true
+    await browser.pause(1000)
+
+    let is4thChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-3"]`).isEnabled()
+    console.log(`FOUR? ${is4thChildDropDownDisplayed}`);
+    expect(is4thChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
+    await browser.pause(1000)
+
+    let is5thChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-4"]`).isEnabled()
+    console.log(`Five? ${is5thChildDropDownDisplayed}`);
+    expect(is5thChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
+    await browser.pause(1000)
+
+    let is6thChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-5"]`).isEnabled()
+    console.log(`six? ${is6thChildDropDownDisplayed}`);
+    expect(is6thChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
+    await browser.pause(1000)
+});
+
+Then(/^I Verify Plus button is disabled$/, async function() { 
+    let plusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`)
+    let plusButtonEnabled = await plusButtonLocator.isEnabled()
+    console.log(`TRTRTRTRTRT? ${plusButtonEnabled}`);
+    expect(plusButtonEnabled, 'Plus Button Is Not Enabled').to.be.true
+    await browser.pause(1000)
+});
+
+Then(/^I Verify minus-button is enabled02$/, async function() { 
+    let minusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[1]`)
+    let minusButtonEnabled = await minusButtonLocator.isEnabled()
+    console.log(`TDTDTDTDTD? ${minusButtonEnabled}`);
+    expect(minusButtonEnabled, 'Plus Button Is Not Enabled').to.be.false
+    await browser.pause(1000)
+});
 
 //BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 
-//     And I Verify Plus-button is enabled
-//     And I Verify minus-button is enabled
-
 //     When I Select “Children” as 6 - Already Created for 3 children use same locators 
 //     Then I Verify Children-age dropdown are 6
+
 //     And I Verify Plus button is disabled
 //     And I Verify minus-button is enabled
 

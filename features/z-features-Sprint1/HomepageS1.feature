@@ -83,13 +83,13 @@ Scenario: Verify error is displayed when user submits the empty feedback form
     And I Select “Children” as 2
 
     Then I Verify Children-age dropdown are 2
-    # And I Verify Plus-button is enabled
-    # And I Verify minus-button is enabled
+    And I Verify Plus-button is enabled
+    And I Verify minus-button is enabled
 
-    # When I Select “Children” as 6 - Already Created for 3 children use same locators 
-    # Then I Verify Children-age dropdown are 6
-    # And I Verify Plus button is disabled
-    # And I Verify minus-button is enabled
+    When I Select “Children” as 6 
+    Then I Verify Children-age dropdown are 6
+    And I Verify Plus button is disabled
+    And I Verify Plus-button is enabled
 
     # When I Select “Children” as 5 - Already Created for 3 children use same locators 
     # Then I Verify Children-age dropdown are 5
