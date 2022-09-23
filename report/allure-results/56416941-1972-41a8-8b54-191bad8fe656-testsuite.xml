@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663898837582' stop='1663898849845'>
+    <name>FeedBackS1 Test</name>
+    <title>FeedBackS1 Test</title>
+    <test-cases>
+        <test-case start='1663898837983' status='broken' stop='1663898849842'>
+            <name>Verify user can submit feedback after completing the feedback form</name>
+            <title>Verify user can submit feedback after completing the feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663898838024' status='passed' stop='1663898845327'>
+                    <name>Given I am on Hotels.com home page0222</name>
+                    <title>Given I am on Hotels.com home page0222</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898845327' status='passed' stop='1663898846590'>
+                    <name>When I Click Sign in link01</name>
+                    <title>When I Click Sign in link01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898846590' status='passed' stop='1663898847679'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab02</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898847679' status='broken' stop='1663898849842'>
+                    <name>And I Select any star-rating01</name>
+                    <title>And I Select any star-rating01</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='a5cd0460-8ac1-4fcb-b7e6-160e024f989d-attachment.png' type='image/png' size='27189'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663898849843' status='canceled' stop='1663898849843'>
+                    <name>And I Enter any comments01</name>
+                    <title>And I Enter any comments01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898849843' status='canceled' stop='1663898849843'>
+                    <name>And I Select any option for “How likely are you to return to Hotels.com”01</name>
+                    <title>And I Select any option for “How likely are you to return to Hotels.com”01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898849843' status='canceled' stop='1663898849843'>
+                    <name>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”01</name>
+                    <title>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898849843' status='canceled' stop='1663898849843'>
+                    <name>And I Select any answer for ”Did you accomplish what you wanted to do on this page”01</name>
+                    <title>And I Select any answer for ”Did you accomplish what you wanted to do on this page”01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898849843' status='canceled' stop='1663898849844'>
+                    <name>And I Click on Submit button05</name>
+                    <title>And I Click on Submit button05</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898849844' status='canceled' stop='1663898849844'>
+                    <name>Then I Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed01</name>
+                    <title>Then I Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable: Element &lt;label class="radio-label"> could not be scrolled into view</message>
+                <stack-trace>element not interactable: Element &lt;label class="radio-label"> could not be scrolled into view
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

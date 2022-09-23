@@ -82,6 +82,12 @@ Scenario: Verify error message for invalid data in SignUp form
     # And I Verify “Continue” button is displayed but NOT enabled
 
 
+
+
+
+
+
+
 # @TC-24
 # Scenario: Verify error is displayed when user submits the empty feedback form
 #     Given I am on Hotels.com home page0211
