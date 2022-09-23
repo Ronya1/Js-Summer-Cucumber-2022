@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663898255229' stop='1663898270356'>
+    <name>FeedBackS1 Test</name>
+    <title>FeedBackS1 Test</title>
+    <test-cases>
+        <test-case start='1663898255569' status='broken' stop='1663898270354'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663898255572' status='passed' stop='1663898264395'>
+                    <name>Given I am on Hotels.com home page0222</name>
+                    <title>Given I am on Hotels.com home page0222</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898264396' status='passed' stop='1663898265694'>
+                    <name>When I Click Sign in link01</name>
+                    <title>When I Click Sign in link01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898265695' status='passed' stop='1663898267007'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab02</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898267007' status='passed' stop='1663898270352'>
+                    <name>And I Click on Submit button04</name>
+                    <title>And I Click on Submit button04</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898270352' status='broken' stop='1663898270354'>
+                    <name>Then I Verify error message is displayed "Please fill in the required information highlighted below." 01</name>
+                    <title>Then I Verify error message is displayed "Please fill in the required information highlighted below." 01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898270354' status='canceled' stop='1663898270354'>
+                    <name>And I Verify star boxes section is in a red dotted box.02</name>
+                    <title>And I Verify star boxes section is in a red dotted box.02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I Verify error message is displayed "Please fill in the required information highlighted below." 01" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I Verify error message is displayed "Please fill in the required information highlighted below." 01" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/z-features-Sprint1/FeedBackS1.feature):1:1
+                	at Scenario(Verify error is displayed when user submits the empty feedback form):4:1
+                	at Step(I Verify error message is displayed "Please fill in the required information highlighted below." 01):9:5
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

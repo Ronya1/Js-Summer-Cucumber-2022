@@ -1,129 +1,190 @@
 const { Given, Then, When } = require("@wdio/cucumber-framework");
 const { expect } = require("chai");
-
-
-// Given(/^I am on Hotels.com home page0211$/, async function () { 
-//     await browser.url('https://www.hotels.com/')
-//     browser.pause(2000)
-// });
+const HomepageS1Test = require("../../Pages/Z-Pages-Sprint1/HomepageS1Test");
+const HHOMEPAGE = new HomepageS1Test();
 
 
 //TC-18
 Given(/^I am on Hotels.com home page0211$/, async function() {
     await browser.url('https://www.hotels.com/');
-    await browser.pause(2000)
+    await browser.pause(500)
 
 });
 
 When(/^I Click on Travelers$/, async function() { 
-    //let thisLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[1]`).click()
-    //await thisLocator.click()
-    await $(`//button[@class="uitk-menu-trigger uitk-fake-input uitk-form-field-trigger"]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.clickTravelersDropDown()
 });
 
 When(/^I Select “Adults" as 6$/, async function() { 
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[1]/div[1]/div[1]/button[2]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.selectAdultTravelers()
+    await HHOMEPAGE.selectAdultTravelers()
+    await HHOMEPAGE.selectAdultTravelers()
+    await HHOMEPAGE.selectAdultTravelers()
 });
 
 When(/^I Select “Children” as 3$/, async function() { 
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.selectChildrenTravelers()
+    await HHOMEPAGE.selectChildrenTravelers()
+    await HHOMEPAGE.selectChildrenTravelers()
 });
 
 When(/^I Select first child age: 4$/, async function() { 
-    await $(`//select[@id="age-traveler_selector_children_age_selector-0-0"]`).click()
-    await $(`//select[@id="age-traveler_selector_children_age_selector-0-0"]//option[@value="4"]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.selectFirstChildsAge()
 });
 
 When(/^I Select second child age: Under 1$/, async function() { 
-    await $(`//select[@id="age-traveler_selector_children_age_selector-0-1"]`).click()
-    await $(`//select[@id="age-traveler_selector_children_age_selector-0-1"]//option[@value="0"]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.selectSecondChildsAge()
 });
 
 When(/^I Select third child age: 7$/, async function() { 
-    await $(`//select[@id="age-traveler_selector_children_age_selector-0-2"]`).click()
-    await $(`//select[@id="age-traveler_selector_children_age_selector-0-2"]//option[@value="7"]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.selectThirdChildsAge()
 });
 
 When(/^I Click Done$/, async function() { 
-    await $(`//button[text()="Done"]`).click()
-    await browser.pause(3000)
+    await HHOMEPAGE.clickDoneButton()
 });
 
 Then(/^I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.$/, async function() { 
     let numberDisplayed = await $(`//button[@class="uitk-menu-trigger uitk-fake-input uitk-form-field-trigger"]`).getText()
     //let numberDisplayed = await $(`//span[contains(text(),'Travelers:')]`).getText()
     //let travelerLocator = await $(`//input[@value="9 travelers, 1 room"]`)
-
     console.log(`AAAAAA ${numberDisplayed}`);
-    await browser.pause(3000)
+    await browser.pause(1000)
 });
 //tagName[not(@attrName='value')]
 // Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.
 //input[@value="9 travelers, 1 room"]
 
-
-
 //DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 //DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 //DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 //TC-20
-// Given(/^I am on Hotels.com home page0211$/, async function() {
-//     await browser.url('https://www.hotels.com/');
-//     await browser.pause(2000)
-// }); // May not need this one as its already defined above and may throw an error 
 
 When(/^I Click Sign in link$/, async function() { 
-    await $(`//button[text()="Sign in"]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.clickSignInLink()
 });
 
 When(/^I Click Sign up link$/, async function() { 
-    await $(`//a[text()="Sign up, it’s free"]`).click()
-    await browser.pause(1000)
+    await HHOMEPAGE.clickSignUpLink()
 });
 
 When(/^I Click “Terms and Conditions” link$/, async function() { 
-    await $(`//a[text()="Terms and Conditions"]`).click()
-    await browser.pause(1000)
-    // const allHandles = await browser.getWindowHandles();
-    // //console.log(`BBBB ${allHandles}`);
-    // await browser.pause(3000)
-    // expect(allHandles.length, 'T&C should have opened a new window').to.equal(2);
+    await HHOMEPAGE.clickTermsAndConditionsLink()
 });
 
 Then(/^I Verify “Terms and Conditions” page opens in new tab$/, async function() { 
-    const allHandles = await browser.getWindowHandles();
-    //console.log(`BBBB ${allHandles}`);
-    await browser.pause(1000)
-    expect(allHandles.length, 'T&C should have opened a new window').to.equal(2);
+    await HHOMEPAGE.verifyTermsAndConditionsOpensInNewPage()
 });
 
 When(/^I Click “Privacy Statement” link$/, async function() { 
-    await $(`//a[text()="Privacy Statement"]`).click()
-    await browser.pause(1000)
-    // const allHandles = await browser.getWindowHandles();
-    // //console.log(`BBBB ${allHandles}`);
-    // await browser.pause(3000)
-    // expect(allHandles.length, 'T&C should have opened a new window').to.equal(2);
+    await HHOMEPAGE.clickPrivacySTMNTLink()
 });
 
 Then(/^I Verify “Privacy Statement” page opens in new tab$/, async function() { 
-    const allHandles = await browser.getWindowHandles();
-    //console.log(`BBBB ${allHandles}`);
-    await browser.pause(3000)
-    expect(allHandles.length, 'Privacy Statement should have opened a new window').to.equal(3);
+    await HHOMEPAGE.verifyPrivacyStatementOpensInNewPage()
 });
+
+
+//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+//TC-28
+
+When(/^I Select “Children” as 2$/, async function() { 
+    await HHOMEPAGE.selectChildrenTravelers()
+    await HHOMEPAGE.selectChildrenTravelers()
+});
+
+Then(/^I Verify Children-age dropdown are 2$/, async function() { 
+    await HHOMEPAGE.verifyChildrenAged2ropdown()
+});
+
+Then(/^I Verify Plus-button is enabled$/, async function() { 
+    await HHOMEPAGE.verifyPlusButtonIsEnabled()
+});
+
+Then(/^I Verify minus-button is enabled$/, async function() { 
+    await HHOMEPAGE.verifyMinusButtonIsEnabled()
+});
+
+When(/^I Select “Children” as 6$/, async function() { 
+    await HHOMEPAGE.selectChildrenTravelers()
+    await HHOMEPAGE.selectChildrenTravelers()
+    await HHOMEPAGE.selectChildrenTravelers()
+    await HHOMEPAGE.selectChildrenTravelers()
+    await browser.pause(1000)
+});
+
+Then(/^I Verify Children-age dropdown are 6$/, async function() { 
+    await HHOMEPAGE.verifyChildrenAged6ropdown()
+});
+
+Then(/^I Verify Plus button is disabled$/, async function() { 
+    await HHOMEPAGE.verifyPlusButtonIsDisabled()
+});
+
+Then(/^I Verify minus-button is enabled02$/, async function() { 
+    await HHOMEPAGE.verifyMinusButtonIsEnabled()
+});
+
+When(/^I Select “Children” as 5$/, async function() { 
+    await HHOMEPAGE.reduceNumberOfChildrenby1()
+});
+
+Then(/^I Verify Children-age dropdown are 5$/, async function() { 
+    await HHOMEPAGE.verifyChildrenAged5ropdown()
+}); 
+
+Then(/^I Verify Plus button is enabled$/, async function() { 
+    await HHOMEPAGE.verifyPlusButtonIsEnabled()
+});
+
+Then(/^I Verify minus-button is enabled03$/, async function() { 
+    await HHOMEPAGE.verifyMinusButtonIsEnabled()
+});
+
+When(/^I Select “Children” as 0$/, async function() { 
+    await HHOMEPAGE.reduceNumberOfChildrenby1()
+    await HHOMEPAGE.reduceNumberOfChildrenby1()
+    await HHOMEPAGE.reduceNumberOfChildrenby1()
+    await HHOMEPAGE.reduceNumberOfChildrenby1()
+    await HHOMEPAGE.reduceNumberOfChildrenby1()
+});
+
+Then(/^I Verify Children-age dropdown is NOT displayed$/, async function() { 
+    await HHOMEPAGE.verifyChildrenDropdownNotDisplyed()
+});
+
+Then(/^I Verify Plus button is enabled02$/, async function() { 
+    await HHOMEPAGE.verifyPlusButtonIsEnabled()
+});
+
+Then(/^I Verify minus-button is disabled04$/, async function() { 
+    await HHOMEPAGE.verifyMinusButtonIsDisabled()
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
 //DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
@@ -440,129 +501,6 @@ Then(/^I Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed$/, async functio
 });
 
 
-//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
-//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
-//DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
-//TC-28
 
-// Given(/^I am on Hotels.com home page0211$/, async function() {
-//     await browser.url('https://www.hotels.com/');
-//     await browser.pause(2000)
-
-// });
-
-// When(/^I Click on Travelers$/, async function() { 
-//     //let thisLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[1]`).click()
-//     //await thisLocator.click()
-//     await $(`//button[@class="uitk-menu-trigger uitk-fake-input uitk-form-field-trigger"]`).click()
-//     await browser.pause(1000)
-// });
-
-When(/^I Select “Children” as 2$/, async function() { 
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await browser.pause(1000)
-});
-
-Then(/^I Verify Children-age dropdown are 2$/, async function() { 
-    let is1stChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-0"]`).isEnabled()
-    console.log(`ISITDISPLAYED1? ${is1stChildDropDownDisplayed}`);
-    expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-
-    let is2ndChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-1"]`).isEnabled()
-    console.log(`ISITDISPLAYED2? ${is2ndChildDropDownDisplayed}`);
-    expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-});
-
-Then(/^I Verify Plus-button is enabled$/, async function() { 
-    let plusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`)
-    let plusButtonEnabled = await plusButtonLocator.isEnabled()
-    console.log(`ISITWorking? ${plusButtonEnabled}`);
-    expect(plusButtonEnabled, 'Plus Button Is Not Enabled').to.be.true
-    await browser.pause(1000)
-});
-
-Then(/^I Verify minus-button is enabled$/, async function() { 
-    let minusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[1]`)
-    let minusButtonEnabled = await minusButtonLocator.isEnabled()
-    console.log(`ISITWorking? ${minusButtonEnabled}`);
-    expect(minusButtonEnabled, 'Plus Button Is Not Enabled').to.be.true
-    await browser.pause(1000)
-});
-
-When(/^I Select “Children” as 6$/, async function() { 
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`).click()
-    await browser.pause(1000)
-});
-
-Then(/^I Verify Children-age dropdown are 6$/, async function() { 
-    let is1stChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-0"]`).isEnabled()
-    console.log(`One? ${is1stChildDropDownDisplayed}`);
-    expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-
-    let is2ndChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-1"]`).isEnabled()
-    console.log(`TWO? ${is2ndChildDropDownDisplayed}`);
-    expect(is1stChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-
-    let is3rdChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-2"]`).isEnabled()
-    console.log(`THREE? ${is3rdChildDropDownDisplayed}`);
-    expect(is3rdChildDropDownDisplayed, 'Child 3 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-
-    let is4thChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-3"]`).isEnabled()
-    console.log(`FOUR? ${is4thChildDropDownDisplayed}`);
-    expect(is4thChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-
-    let is5thChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-4"]`).isEnabled()
-    console.log(`Five? ${is5thChildDropDownDisplayed}`);
-    expect(is5thChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-
-    let is6thChildDropDownDisplayed= await $(`//select[@id="age-traveler_selector_children_age_selector-0-5"]`).isEnabled()
-    console.log(`six? ${is6thChildDropDownDisplayed}`);
-    expect(is6thChildDropDownDisplayed, 'Child 1 Is Not Displayed').to.be.true
-    await browser.pause(1000)
-});
-
-Then(/^I Verify Plus button is disabled$/, async function() { 
-    let plusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[2]`)
-    let plusButtonEnabled = await plusButtonLocator.isEnabled()
-    console.log(`TRTRTRTRTRT? ${plusButtonEnabled}`);
-    expect(plusButtonEnabled, 'Plus Button Is Not Enabled').to.be.true
-    await browser.pause(1000)
-});
-
-Then(/^I Verify minus-button is enabled02$/, async function() { 
-    let minusButtonLocator = await $(`//body/div[@id='app-blossom-flex-ui']/div[@id='app-layer-manager']/div[@id='app-layer-base']/div[1]/div[2]/div[1]/div[1]/section[1]/form[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/section[1]/div[2]/div[1]/div[1]/button[1]`)
-    let minusButtonEnabled = await minusButtonLocator.isEnabled()
-    console.log(`TDTDTDTDTD? ${minusButtonEnabled}`);
-    expect(minusButtonEnabled, 'Plus Button Is Not Enabled').to.be.false
-    await browser.pause(1000)
-});
 
 //BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-
-//     When I Select “Children” as 6 - Already Created for 3 children use same locators 
-//     Then I Verify Children-age dropdown are 6
-
-//     And I Verify Plus button is disabled
-//     And I Verify minus-button is enabled
-
-//     When I Select “Children” as 5 - Already Created for 3 children use same locators 
-//     Then I Verify Children-age dropdown are 5
-//     And I Verify Plus button is enabled
-//     And I Verify minus-button is enabled
-
-//     When I Select “Children” as 0 - Already Created for 3 children use same locators 
-//     Then I Verify Children-age dropdown is NOT displayed
-//     And I Verify Plus button is enabled
-//     And I Verify minus-button is disabled

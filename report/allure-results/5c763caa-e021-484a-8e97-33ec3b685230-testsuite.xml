@@ -1,0 +1,88 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663887423063' stop='1663887450978'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663887423231' status='passed' stop='1663887450976'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663887423234' status='passed' stop='1663887433657'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887433657' status='passed' stop='1663887434799'>
+                    <name>When I Click on Travelers</name>
+                    <title>When I Click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887434799' status='passed' stop='1663887436028'>
+                    <name>And I Select “Children” as 2</name>
+                    <title>And I Select “Children” as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887436028' status='passed' stop='1663887438144'>
+                    <name>Then I Verify Children-age dropdown are 2</name>
+                    <title>Then I Verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887438144' status='passed' stop='1663887439234'>
+                    <name>And I Verify Plus-button is enabled</name>
+                    <title>And I Verify Plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887439234' status='passed' stop='1663887440269'>
+                    <name>And I Verify minus-button is enabled</name>
+                    <title>And I Verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887440269' status='passed' stop='1663887441571'>
+                    <name>When I Select “Children” as 6</name>
+                    <title>When I Select “Children” as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887441572' status='passed' stop='1663887447841'>
+                    <name>Then I Verify Children-age dropdown are 6</name>
+                    <title>Then I Verify Children-age dropdown are 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887447842' status='passed' stop='1663887448866'>
+                    <name>And I Verify Plus button is disabled</name>
+                    <title>And I Verify Plus button is disabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887448867' status='passed' stop='1663887449892'>
+                    <name>And I Verify minus-button is enabled02</name>
+                    <title>And I Verify minus-button is enabled02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663887449892' status='passed' stop='1663887450974'>
+                    <name>When I Select “Children” as 5</name>
+                    <title>When I Select “Children” as 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

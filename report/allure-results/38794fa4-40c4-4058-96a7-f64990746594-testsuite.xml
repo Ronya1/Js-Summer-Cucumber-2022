@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663892555434' stop='1663892571334'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663892555536' status='passed' stop='1663892571333'>
+            <name>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</name>
+            <title>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663892555540' status='passed' stop='1663892562844'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663892562844' status='passed' stop='1663892563248'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663892563248' status='passed' stop='1663892565937'>
+                    <name>And I Click Sign up link</name>
+                    <title>And I Click Sign up link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663892565937' status='passed' stop='1663892566121'>
+                    <name>And I Click “Terms and Conditions” link</name>
+                    <title>And I Click “Terms and Conditions” link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663892566121' status='passed' stop='1663892567136'>
+                    <name>Then I Verify “Terms and Conditions” page opens in new tab</name>
+                    <title>Then I Verify “Terms and Conditions” page opens in new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663892567136' status='passed' stop='1663892568322'>
+                    <name>And I Click “Privacy Statement” link</name>
+                    <title>And I Click “Privacy Statement” link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663892568322' status='passed' stop='1663892571332'>
+                    <name>Then I Verify “Privacy Statement” page opens in new tab</name>
+                    <title>Then I Verify “Privacy Statement” page opens in new tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
