@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663712877906' stop='1663712899276'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663712878007' status='broken' stop='1663712899275'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663712878011' status='passed' stop='1663712886738'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712886739' status='passed' stop='1663712887919'>
+                    <name>When I Click on Travelers</name>
+                    <title>When I Click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712887919' status='passed' stop='1663712889328'>
+                    <name>And I Select “Adults" as 6</name>
+                    <title>And I Select “Adults" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712889328' status='passed' stop='1663712890617'>
+                    <name>And I Select “Children” as 3</name>
+                    <title>And I Select “Children” as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712890617' status='passed' stop='1663712892113'>
+                    <name>And I Select first child age: 4</name>
+                    <title>And I Select first child age: 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712892113' status='passed' stop='1663712893800'>
+                    <name>And I Select second child age: Under 1</name>
+                    <title>And I Select second child age: Under 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712893800' status='passed' stop='1663712895477'>
+                    <name>And I Select third child age: 7</name>
+                    <title>And I Select third child age: 7</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712895477' status='passed' stop='1663712898777'>
+                    <name>And I Click Done</name>
+                    <title>And I Click Done</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663712898777' status='broken' stop='1663712899275'>
+                    <name>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</name>
+                    <title>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='062d6998-1d69-45bc-b27c-6a0cd2bfb001-attachment.png' type='image/png' size='780908'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Malformed type for "name" parameter of command getElementAttribute</message>
+                <stack-trace>Error: Malformed type for "name" parameter of command getElementAttribute
+                Expected: string
+                Actual: undefined
+                
+                For more info see https://w3c.github.io/webdriver/#dfn-get-element-attribute
+                
+                    at Element.protocolCommand (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriver/build/command.js:53:23)
+                    at Element.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:38)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Element.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at async Element.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)
+                    at async Element.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)
+                    at async Element.elementErrorHandlerCallbackFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriverio/build/middlewares.js:24:32)
+                    at async Element.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

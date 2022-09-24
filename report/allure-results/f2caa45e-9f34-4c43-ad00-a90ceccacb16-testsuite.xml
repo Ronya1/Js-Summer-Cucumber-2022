@@ -1,0 +1,188 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663631906576' stop='1663631913179'>
+    <name>Sign Up</name>
+    <title>Sign Up</title>
+    <test-cases>
+        <test-case start='1663631906768' status='passed' stop='1663631911315'>
+            <name>Verify current date is selected on sign up form</name>
+            <title>Verify current date is selected on sign up form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-5'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663631906772' status='passed' stop='1663631909435'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631909435' status='passed' stop='1663631910204'>
+                    <name>When I click Create New Account button</name>
+                    <title>When I click Create New Account button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631910204' status='passed' stop='1663631911313'>
+                    <name>Then I verify current date is selected in dropdown</name>
+                    <title>Then I verify current date is selected in dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1663631911315' status='broken' stop='1663631912131'>
+            <name>Verify no gender button is selected</name>
+            <title>Verify no gender button is selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-5'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663631911316' status='passed' stop='1663631911711'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631911711' status='passed' stop='1663631912128'>
+                    <name>When I click Create New Account button</name>
+                    <title>When I click Create New Account button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631912128' status='broken' stop='1663631912129'>
+                    <name>Then I verify female radio button is not selected</name>
+                    <title>Then I verify female radio button is not selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631912129' status='broken' stop='1663631912129'>
+                    <name>And I verify male radio button is not selected</name>
+                    <title>And I verify male radio button is not selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631912130' status='broken' stop='1663631912130'>
+                    <name>And I verify custom radio button is not selected</name>
+                    <title>And I verify custom radio button is not selected</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631912130' status='broken' stop='1663631912131'>
+                    <name>And I enter "abcd@1234" in confirm new password</name>
+                    <title>And I enter "abcd@1234" in confirm new password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I enter "abcd@1234" in confirm new password" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I enter "abcd@1234" in confirm new password" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/Facebook/Signup.feature):1:1
+                	at Scenario(Verify no gender button is selected):15:5
+                	at Step(I enter "abcd@1234" in confirm new password):21:9
+                </stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1663631912131' status='broken' stop='1663631913178'>
+            <name>Verify user gets error if already registered</name>
+            <title>Verify user gets error if already registered</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-5'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663631912132' status='passed' stop='1663631912820'>
+                    <name>Given I am on facebook homepage</name>
+                    <title>Given I am on facebook homepage</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631912820' status='passed' stop='1663631913172'>
+                    <name>When I click Create New Account button</name>
+                    <title>When I click Create New Account button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913172' status='broken' stop='1663631913172'>
+                    <name>And I enter "John" in firstname</name>
+                    <title>And I enter "John" in firstname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913172' status='broken' stop='1663631913172'>
+                    <name>And I enter "Doe" in laststname</name>
+                    <title>And I enter "Doe" in laststname</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913172' status='broken' stop='1663631913173'>
+                    <name>And I enter "9879879870" in mobile number</name>
+                    <title>And I enter "9879879870" in mobile number</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913173' status='broken' stop='1663631913174'>
+                    <name>And I enter "abcd@1234" in new password</name>
+                    <title>And I enter "abcd@1234" in new password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913174' status='broken' stop='1663631913174'>
+                    <name>And I enter "abcd@1234" in confirm new password</name>
+                    <title>And I enter "abcd@1234" in confirm new password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913174' status='broken' stop='1663631913176'>
+                    <name>And I select "Dec 12 1990" in date of birth</name>
+                    <title>And I select "Dec 12 1990" in date of birth</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913176' status='broken' stop='1663631913177'>
+                    <name>And I select "female" in gender</name>
+                    <title>And I select "female" in gender</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913177' status='broken' stop='1663631913178'>
+                    <name>And I click submit button</name>
+                    <title>And I click submit button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663631913178' status='broken' stop='1663631913178'>
+                    <name>Then I verify user is already registered error is displayed</name>
+                    <title>Then I verify user is already registered error is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify user is already registered error is displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify user is already registered error is displayed" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/Facebook/Signup.feature):1:1
+                	at Scenario(Verify user gets error if already registered):24:5
+                	at Step(I verify user is already registered error is displayed):35:9
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

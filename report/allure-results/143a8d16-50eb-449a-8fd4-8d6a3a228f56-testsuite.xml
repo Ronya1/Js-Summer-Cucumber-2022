@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663899127715' stop='1663899138529'>
+    <name>FeedBackS1 Test</name>
+    <title>FeedBackS1 Test</title>
+    <test-cases>
+        <test-case start='1663899128312' status='broken' stop='1663899138527'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663899128318' status='passed' stop='1663899138260'>
+                    <name>Given I am on Hotels.com home page0222</name>
+                    <title>Given I am on Hotels.com home page0222</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663899138260' status='broken' stop='1663899138527'>
+                    <name>When I Click Sign in link01</name>
+                    <title>When I Click Sign in link01</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9d7b789b-9120-4c1f-a9fd-c81d80f475e7-attachment.png' type='image/png' size='1007799'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663899138527' status='canceled' stop='1663899138527'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab02</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663899138528' status='canceled' stop='1663899138528'>
+                    <name>And I Click on Submit button04</name>
+                    <title>And I Click on Submit button04</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663899138528' status='canceled' stop='1663899138528'>
+                    <name>Then I Verify error message is displayed 01 "Please fill in the required information highlighted below."</name>
+                    <title>Then I Verify error message is displayed 01 "Please fill in the required information highlighted below."</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663899138528' status='canceled' stop='1663899138528'>
+                    <name>And I Verify star boxes section is in a red dotted box.02</name>
+                    <title>And I Verify star boxes section is in a red dotted box.02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: FFEEDBCK.signUpLink is not a function</message>
+                <stack-trace>TypeError: FFEEDBCK.signUpLink is not a function
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/FeedBackS1SD.js:21:20)
+                    at async wrapPromiseWithTimeout (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/time.js:67:12)
+                    at async Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+                    at async Object.run (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+                    at async TestCaseRunner.invokeStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48
+                    at async TestCaseRunner.aroundTestStep (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:117:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

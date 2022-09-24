@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663807410265' stop='1663807444323'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663807410473' status='broken' stop='1663807444321'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663807410475' status='broken' stop='1663807444320'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663807444321' status='canceled' stop='1663807444321'>
+                    <name>When I Click on Travelers</name>
+                    <title>When I Click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663807444321' status='canceled' stop='1663807444321'>
+                    <name>And I Select “Children” as 2</name>
+                    <title>And I Select “Children” as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663807444321' status='canceled' stop='1663807444321'>
+                    <name>Then I Verify Children-age dropdown are 2</name>
+                    <title>Then I Verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: write EPIPE</message>
+                <stack-trace>Error: write EPIPE
+                    at afterWriteDispatched (node:internal/stream_base_commons:160:15)
+                    at writeGeneric (node:internal/stream_base_commons:151:3)
+                    at Socket._writeGeneric (node:net:817:11)
+                    at Socket._write (node:net:829:8)
+                    at writeOrBuffer (node:internal/streams/writable:389:12)
+                    at _write (node:internal/streams/writable:330:10)
+                    at Socket.Writable.write (node:internal/streams/writable:334:10)
+                    at console.value (node:internal/console/constructor:286:16)
+                    at console.log (node:internal/console/constructor:360:26)
+                    at /Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/logger/build/node.js:100:9</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

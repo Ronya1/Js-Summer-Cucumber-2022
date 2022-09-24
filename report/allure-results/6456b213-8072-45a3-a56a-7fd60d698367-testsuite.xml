@@ -1,0 +1,82 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663898755670' stop='1663898777102'>
+    <name>FeedBackS1 Test</name>
+    <title>FeedBackS1 Test</title>
+    <test-cases>
+        <test-case start='1663898755985' status='passed' stop='1663898777101'>
+            <name>Verify user can submit feedback after completing the feedback form</name>
+            <title>Verify user can submit feedback after completing the feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663898755987' status='passed' stop='1663898763500'>
+                    <name>Given I am on Hotels.com home page0222</name>
+                    <title>Given I am on Hotels.com home page0222</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898763500' status='passed' stop='1663898764833'>
+                    <name>When I Click Sign in link01</name>
+                    <title>When I Click Sign in link01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898764833' status='passed' stop='1663898765965'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab02</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898765965' status='passed' stop='1663898770273'>
+                    <name>And I Select any star-rating01</name>
+                    <title>And I Select any star-rating01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898770273' status='passed' stop='1663898773557'>
+                    <name>And I Enter any comments01</name>
+                    <title>And I Enter any comments01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898773557' status='passed' stop='1663898777087'>
+                    <name>And I Select any option for “How likely are you to return to Hotels.com”01</name>
+                    <title>And I Select any option for “How likely are you to return to Hotels.com”01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898777087' status='canceled' stop='1663898777096'>
+                    <name>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</name>
+                    <title>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898777096' status='canceled' stop='1663898777098'>
+                    <name>And I Select any answer for ”Did you accomplish what you wanted to do on this page”</name>
+                    <title>And I Select any answer for ”Did you accomplish what you wanted to do on this page”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898777098' status='canceled' stop='1663898777098'>
+                    <name>And I Click on Submit button05</name>
+                    <title>And I Click on Submit button05</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898777099' status='canceled' stop='1663898777100'>
+                    <name>Then I Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed</name>
+                    <title>Then I Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

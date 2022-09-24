@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663898691510' stop='1663898706246'>
+    <name>FeedBackS1 Test</name>
+    <title>FeedBackS1 Test</title>
+    <test-cases>
+        <test-case start='1663898691837' status='broken' stop='1663898706231'>
+            <name>Verify user can submit feedback after completing the feedback form</name>
+            <title>Verify user can submit feedback after completing the feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663898691839' status='passed' stop='1663898696073'>
+                    <name>Given I am on Hotels.com home page0222</name>
+                    <title>Given I am on Hotels.com home page0222</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898696073' status='broken' stop='1663898706231'>
+                    <name>When I Click Sign in link01</name>
+                    <title>When I Click Sign in link01</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='abc0a423-4479-4f03-80a2-6e6e3974005f-attachment.png' type='image/png' size='94010'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663898706231' status='canceled' stop='1663898706231'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab02</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898706231' status='canceled' stop='1663898706231'>
+                    <name>And I Select any star-rating01</name>
+                    <title>And I Select any star-rating01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898706232' status='canceled' stop='1663898706232'>
+                    <name>And I Enter any comments01</name>
+                    <title>And I Enter any comments01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898706232' status='canceled' stop='1663898706233'>
+                    <name>And I Select any option for “How likely are you to return to Hotels.com”01</name>
+                    <title>And I Select any option for “How likely are you to return to Hotels.com”01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898706233' status='canceled' stop='1663898706240'>
+                    <name>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</name>
+                    <title>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898706241' status='canceled' stop='1663898706242'>
+                    <name>And I Select any answer for ”Did you accomplish what you wanted to do on this page”</name>
+                    <title>And I Select any answer for ”Did you accomplish what you wanted to do on this page”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898706243' status='canceled' stop='1663898706243'>
+                    <name>And I Click on Submit button05</name>
+                    <title>And I Click on Submit button05</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663898706243' status='canceled' stop='1663898706244'>
+                    <name>Then I Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed</name>
+                    <title>Then I Verify “THANK YOU FOR YOUR FEEDBACK.“ is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "//button[text()="Sign in"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//button[text()="Sign in"]" because element wasn't found
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/FeedBackS1SD.js:17:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

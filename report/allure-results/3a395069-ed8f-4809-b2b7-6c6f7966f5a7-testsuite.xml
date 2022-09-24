@@ -1,0 +1,53 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663807408564' stop='1663807424041'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663807408727' status='broken' stop='1663807424038'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663807408729' status='passed' stop='1663807413879'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663807413879' status='broken' stop='1663807424038'>
+                    <name>When I Click on Travelers</name>
+                    <title>When I Click on Travelers</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3e4258ed-0b1b-4f42-a4c9-3a9b22ba4ee7-attachment.png' type='image/png' size='117092'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663807424038' status='canceled' stop='1663807424039'>
+                    <name>And I Select “Children” as 2</name>
+                    <title>And I Select “Children” as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663807424039' status='canceled' stop='1663807424039'>
+                    <name>Then I Verify Children-age dropdown are 2</name>
+                    <title>Then I Verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: Can't call click on element with selector "//button[@class="uitk-menu-trigger uitk-fake-input uitk-form-field-trigger"]" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//button[@class="uitk-menu-trigger uitk-fake-input uitk-form-field-trigger"]" because element wasn't found
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/HomepageS1SD.js:21:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

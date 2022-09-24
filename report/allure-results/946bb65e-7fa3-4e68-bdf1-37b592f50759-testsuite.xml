@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663900087994' stop='1663900101990'>
+    <name>FeedBackS1 Test</name>
+    <title>FeedBackS1 Test</title>
+    <test-cases>
+        <test-case start='1663900088363' status='failed' stop='1663900101988'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663900088366' status='passed' stop='1663900098404'>
+                    <name>Given I am on Hotels.com home page0222</name>
+                    <title>Given I am on Hotels.com home page0222</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663900098404' status='passed' stop='1663900098763'>
+                    <name>When I Click Sign in link01</name>
+                    <title>When I Click Sign in link01</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663900098763' status='passed' stop='1663900098765'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab02</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663900098765' status='passed' stop='1663900098767'>
+                    <name>And I Click on Submit button04</name>
+                    <title>And I Click on Submit button04</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663900098767' status='failed' stop='1663900101988'>
+                    <name>Then I Verify error message is displayed 01 "Please fill in the required information highlighted below."</name>
+                    <title>Then I Verify error message is displayed 01 "Please fill in the required information highlighted below."</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='f60f2152-27ed-47a7-8a77-bb09f63b2d24-attachment.png' type='image/png' size='115015'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663900101988' status='canceled' stop='1663900101989'>
+                    <name>And I Verify star boxes section is in a red dotted box.02</name>
+                    <title>And I Verify star boxes section is in a red dotted box.02</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Error Message is Not Displayed1: expected false to be true</message>
+                <stack-trace>AssertionError: Error Message is Not Displayed1: expected false to be true
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/FeedBackS1SD.js:35:70)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

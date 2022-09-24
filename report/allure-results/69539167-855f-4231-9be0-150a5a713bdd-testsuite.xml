@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663805560927' stop='1663805598880'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663805561110' status='passed' stop='1663805598879'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663805561112' status='passed' stop='1663805572885'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805572885' status='passed' stop='1663805574042'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805574042' status='passed' stop='1663805578624'>
+                    <name>And I Click “Feedback” And Open PAge In New Tab</name>
+                    <title>And I Click “Feedback” And Open PAge In New Tab</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805578624' status='passed' stop='1663805582721'>
+                    <name>And I Select any star-rating</name>
+                    <title>And I Select any star-rating</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805582722' status='passed' stop='1663805585902'>
+                    <name>And I Enter any comments</name>
+                    <title>And I Enter any comments</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805585902' status='passed' stop='1663805589341'>
+                    <name>And I Select any option for “How likely are you to return to Hotels.com”</name>
+                    <title>And I Select any option for “How likely are you to return to Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805589341' status='passed' stop='1663805592696'>
+                    <name>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</name>
+                    <title>And I Select any answer for “Prior to this visit, have you ever booked on Hotels.com”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805592696' status='passed' stop='1663805594800'>
+                    <name>And I Select any answer for ”Did you accomplish what you wanted to do on this page”</name>
+                    <title>And I Select any answer for ”Did you accomplish what you wanted to do on this page”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663805594800' status='passed' stop='1663805598878'>
+                    <name>And I Click on Submit button03</name>
+                    <title>And I Click on Submit button03</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

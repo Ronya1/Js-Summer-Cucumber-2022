@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663806441213' stop='1663806441404'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663806441389' status='broken' stop='1663806441400'>
+            <name>Verify error is displayed when user submits the empty feedback form</name>
+            <title>Verify error is displayed when user submits the empty feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663806441391' status='broken' stop='1663806441399'>
+                    <name>Given I am on Hotels.com home page0211 - Already Created</name>
+                    <title>Given I am on Hotels.com home page0211 - Already Created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663806441400' status='broken' stop='1663806441400'>
+                    <name>When I Click on Travelers - Already Created</name>
+                    <title>When I Click on Travelers - Already Created</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663806441400' status='broken' stop='1663806441400'>
+                    <name>And I Select “Children” as 2 - Already Created for 3 children use same locators</name>
+                    <title>And I Select “Children” as 2 - Already Created for 3 children use same locators</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I Select “Children” as 2 - Already Created for 3 children use same locators" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I Select “Children” as 2 - Already Created for 3 children use same locators" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/z-features-Sprint1/HomepageS1.feature):1:1
+                	at Scenario(Verify error is displayed when user submits the empty feedback form):80:1
+                	at Step(I Select “Children” as 2 - Already Created for 3 children use same locators):83:5
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

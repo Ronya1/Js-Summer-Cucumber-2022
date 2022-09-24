@@ -1,0 +1,96 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663722530675' stop='1663722551558'>
+    <name>HomepageS1 Test</name>
+    <title>HomepageS1 Test</title>
+    <test-cases>
+        <test-case start='1663722530818' status='broken' stop='1663722551557'>
+            <name>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</name>
+            <title>Verify TermsAndConditions link and PrivacyStatements link open correct page on new tab</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-10'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1663722530822' status='passed' stop='1663722539195'>
+                    <name>Given I am on Hotels.com home page0211</name>
+                    <title>Given I am on Hotels.com home page0211</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722539195' status='passed' stop='1663722540534'>
+                    <name>When I Click Sign in link</name>
+                    <title>When I Click Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722540534' status='passed' stop='1663722544577'>
+                    <name>And I Click Sign up link</name>
+                    <title>And I Click Sign up link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722544577' status='passed' stop='1663722546068'>
+                    <name>And I Enter invalid email address with at least @ symbol #!@###</name>
+                    <title>And I Enter invalid email address with at least @ symbol #!@###</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722546068' status='passed' stop='1663722546608'>
+                    <name>Then I Verify error is displayed Enter a valid email address</name>
+                    <title>Then I Verify error is displayed Enter a valid email address</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722546608' status='passed' stop='1663722547566'>
+                    <name>And I Enter invalid first name !@</name>
+                    <title>And I Enter invalid first name !@</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722547566' status='passed' stop='1663722548093'>
+                    <name>Then I Verify error is displayed First name cannot contain special characters</name>
+                    <title>Then I Verify error is displayed First name cannot contain special characters</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722548093' status='passed' stop='1663722549144'>
+                    <name>And I Enter invalid last name %&lt;&amp;</name>
+                    <title>And I Enter invalid last name %&lt;&amp;</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722549144' status='passed' stop='1663722549668'>
+                    <name>Then I Verify error is displayed Last name cannot contain special characters</name>
+                    <title>Then I Verify error is displayed Last name cannot contain special characters</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722549669' status='passed' stop='1663722550888'>
+                    <name>And I Enter password</name>
+                    <title>And I Enter password</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663722550888' status='broken' stop='1663722551557'>
+                    <name>Then I Verify “Keep me signed in” checkbox is displayed and enabled</name>
+                    <title>Then I Verify “Keep me signed in” checkbox is displayed and enabled</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='e52cc50d-eaf7-44c4-b0fe-f2025716ba71-attachment.png' type='image/png' size='86825'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: The selector "///button[@id="signupFormSubmitButton"]" used with strategy "xpath" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors</message>
+                <stack-trace>invalid selector: The selector "///button[@id="signupFormSubmitButton"]" used with strategy "xpath" is invalid! For more information on selectors visit the WebdriverIO docs at: https://webdriver.io/docs/selectors
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint1/HomepageS1SD.js:261:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
