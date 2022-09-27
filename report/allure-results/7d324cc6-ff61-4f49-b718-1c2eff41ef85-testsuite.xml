@@ -1,0 +1,44 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664245176976' stop='1664245233891'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664245177082' status='broken' stop='1664245233887'>
+            <name>Verify past dates and back button on Current month's calendar is disabled</name>
+            <title>Verify past dates and back button on Current month's calendar is disabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1664245177084' status='broken' stop='1664245233887'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664245233887' status='canceled' stop='1664245233888'>
+                    <name>When I Click on Dates</name>
+                    <title>When I Click on Dates</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>no such window: Browsing context has been discarded</message>
+                <stack-trace>no such window: Browsing context has been discarded
+                    at getErrorFromResponseBody (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriver/build/utils.js:198:12)
+                    at NodeJSRequest._request (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriver/build/request/index.js:166:60)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Browser.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)
+                    at async Browser.$ (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/webdriverio/build/commands/browser/$.js:91:17)
+                    at async Browser.wrapCommandFn (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@wdio/utils/build/shim.js:137:29)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

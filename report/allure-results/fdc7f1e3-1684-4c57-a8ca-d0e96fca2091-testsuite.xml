@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664245260137' stop='1664245321703'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664245260631' status='broken' stop='1664245321701'>
+            <name>Verify past dates and back button on Current month's calendar is disabled</name>
+            <title>Verify past dates and back button on Current month's calendar is disabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664245260633' status='broken' stop='1664245321701'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='209555e7-2bc5-465b-b478-98e5a94ce138-attachment.png' type='image/png' size='1846269'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664245321701' status='canceled' stop='1664245321701'>
+                    <name>When I Click on Dates</name>
+                    <title>When I Click on Dates</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: function timed out, ensure the promise resolves within 60000 milliseconds</message>
+                <stack-trace>Error: function timed out, ensure the promise resolves within 60000 milliseconds
+                    at Timeout.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/time.js:64:20)
+                    at listOnTimeout (node:internal/timers:559:17)
+                    at processTimers (node:internal/timers:502:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
