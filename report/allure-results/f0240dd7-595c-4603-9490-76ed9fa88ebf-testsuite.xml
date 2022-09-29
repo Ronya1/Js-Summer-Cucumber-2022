@@ -1,0 +1,48 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664415668396' stop='1664415677715'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664415668701' status='broken' stop='1664415677714'>
+            <name>Verify "List your Property" flow</name>
+            <title>Verify "List your Property" flow</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1664415668709' status='passed' stop='1664415676382'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415676383' status='passed' stop='1664415677573'>
+                    <name>When I Click on “List your property”</name>
+                    <title>When I Click on “List your property”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415677573' status='broken' stop='1664415677714'>
+                    <name>Then I Verify “What would you like to list” is displayed"</name>
+                    <title>Then I Verify “What would you like to list” is displayed"</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='81830271-0b41-4189-b4b7-3f91f2aa0a9a-attachment.png' type='image/png' size='206296'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: whatYouWouldLikeToListLocator.isItDisplayed is not a function</message>
+                <stack-trace>TypeError: whatYouWouldLikeToListLocator.isItDisplayed is not a function
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint2/AllCaseseS2SD.js:72:61)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

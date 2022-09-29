@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664415396963' stop='1664415407469'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664415397019' status='broken' stop='1664415407467'>
+            <name>Verify "List your Property" flow</name>
+            <title>Verify "List your Property" flow</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664415397021' status='passed' stop='1664415405217'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415405217' status='broken' stop='1664415407466'>
+                    <name>When I Click on “List your property”</name>
+                    <title>When I Click on “List your property”</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9365a281-d106-451d-b470-4c33a7311779-attachment.png' type='image/png' size='1845152'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664415407466' status='broken' stop='1664415407467'>
+                    <name>Then I Verify “What would you like to list” is displayed"</name>
+                    <title>Then I Verify “What would you like to list” is displayed"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I Verify “What would you like to list” is displayed"" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I Verify “What would you like to list” is displayed"" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/features/z-features-Sprint2/featureS2.feature):1:1
+                	at Scenario(Verify "List your Property" flow):12:1
+                	at Step(I Verify “What would you like to list” is displayed"):15:5
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

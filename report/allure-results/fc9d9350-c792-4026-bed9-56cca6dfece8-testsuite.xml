@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664328517779' stop='1664328530055'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664328518001' status='failed' stop='1664328530053'>
+            <name>Verify past dates and back button on Current month's calendar is disabled</name>
+            <title>Verify past dates and back button on Current month's calendar is disabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1664328518003' status='passed' stop='1664328525790'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664328525790' status='passed' stop='1664328527105'>
+                    <name>When I Click on Dates</name>
+                    <title>When I Click on Dates</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664328527105' status='passed' stop='1664328528382'>
+                    <name>And I Go to current month if not displayed</name>
+                    <title>And I Go to current month if not displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664328528382' status='failed' stop='1664328530052'>
+                    <name>And I Verify Back button on current month is disabled</name>
+                    <title>And I Verify Back button on current month is disabled</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='f224a697-e34c-44f9-a2b4-761665d9505d-attachment.png' type='image/png' size='1314754'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Error Message is Not Displayed1: expected false to be true</message>
+                <stack-trace>AssertionError: Error Message is Not Displayed1: expected false to be true
+                    + expected - actual
+                
+                    -false
+                    +true
+                
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint2/AllCaseseS2SD.js:31:73)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

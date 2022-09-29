@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664328474113' stop='1664328486593'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664328474289' status='passed' stop='1664328486592'>
+            <name>Verify past dates and back button on Current month's calendar is disabled</name>
+            <title>Verify past dates and back button on Current month's calendar is disabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.1'/>
+            </parameters>
+            <steps>
+                <step start='1664328474295' status='passed' stop='1664328482913'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664328482913' status='passed' stop='1664328484236'>
+                    <name>When I Click on Dates</name>
+                    <title>When I Click on Dates</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664328484236' status='passed' stop='1664328485544'>
+                    <name>And I Go to current month if not displayed</name>
+                    <title>And I Go to current month if not displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664328485544' status='passed' stop='1664328486589'>
+                    <name>And I Verify Back button on current month is disabled</name>
+                    <title>And I Verify Back button on current month is disabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
