@@ -13,11 +13,11 @@ Scenario: Verify "List your Property" flow
     Given I am on Hotels.com home page020202
     When I Click on “List your property”
     Then I Verify “What would you like to list” is displayed"
-    # And I Verify “Lodging“ and “Private residence“ options are displayed
-    # When I Click on “Private residence“
-    # Then I Verify ”Step 1 of 3” is displayed
-    # And I Verify “See how much you could earn!” is displayed
-    # When I Enter “4“ as bedroom and Enter “2.5“ as bathroom
+    And I Verify “Lodging“ and “Private residence“ options are displayed
+    When I Click on “Private residence“
+    Then I Verify ”Step 1 of 3” is displayed
+    And I Verify “See how much you could earn!” is displayed
+    When I Enter “4“ as bedroom and Enter “2.5“ as bathroom
     # And I Click on “Next” button
     # Then I Verify ”Step 2 of 3” is displayed
     # And I Verify “Where is your property located?” is displayed

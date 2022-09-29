@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664491695084' stop='1664491713976'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664491695390' status='passed' stop='1664491713976'>
+            <name>Verify "List your Property" flow</name>
+            <title>Verify "List your Property" flow</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664491695393' status='passed' stop='1664491701009'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664491701010' status='passed' stop='1664491703678'>
+                    <name>When I Click on “List your property”</name>
+                    <title>When I Click on “List your property”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664491703678' status='passed' stop='1664491705744'>
+                    <name>Then I Verify “What would you like to list” is displayed"</name>
+                    <title>Then I Verify “What would you like to list” is displayed"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664491705744' status='passed' stop='1664491707818'>
+                    <name>And I Verify “Lodging“ and “Private residence“ options are displayed</name>
+                    <title>And I Verify “Lodging“ and “Private residence“ options are displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664491707818' status='passed' stop='1664491711851'>
+                    <name>When I Click on “Private residence“</name>
+                    <title>When I Click on “Private residence“</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664491711851' status='passed' stop='1664491712927'>
+                    <name>Then I Verify ”Step 1 of 3” is displayed</name>
+                    <title>Then I Verify ”Step 1 of 3” is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664491712927' status='passed' stop='1664491713974'>
+                    <name>And I Verify “See how much you could earn!” is displayed</name>
+                    <title>And I Verify “See how much you could earn!” is displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

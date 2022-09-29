@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664490539403' stop='1664490551540'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664490539661' status='passed' stop='1664490551540'>
+            <name>Verify "List your Property" flow</name>
+            <title>Verify "List your Property" flow</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664490539667' status='passed' stop='1664490545920'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664490545920' status='passed' stop='1664490549487'>
+                    <name>When I Click on “List your property”</name>
+                    <title>When I Click on “List your property”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664490549487' status='passed' stop='1664490551539'>
+                    <name>Then I Verify “What would you like to list” is displayed"</name>
+                    <title>Then I Verify “What would you like to list” is displayed"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

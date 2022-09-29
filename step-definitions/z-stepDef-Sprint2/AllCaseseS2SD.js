@@ -71,18 +71,61 @@ Then(/^I Verify “What would you like to list” is displayed"$/, async functio
     let whatYouWouldLikeToListLocator = await $(`//p[text()="What would you like to list?"]`)
     let isItDisplayed = await whatYouWouldLikeToListLocator.isDisplayed() 
     await browser.pause(1000)
-    console.log(`AAAAA ${isItDisplayed}`);
+    // console.log(`AAAAA ${isItDisplayed}`);
     await browser.pause(1000)
     expect(isItDisplayed, 'Correct Message is Displayed').to.be.true 
 }); 
 
+Then(/^I Verify “Lodging“ and “Private residence“ options are displayed$/, async function() {
+    let lodgingLocatorOption = await $(`//p[text()="Lodging"]`)
+    let privateResidenceOption = await $(`//p[text()="Private residence"]`)
+    let islodgingLocatorOptionDisplayed = await lodgingLocatorOption.isDisplayed() 
+    let isprivateResidenceOptionDisplayed = await privateResidenceOption.isDisplayed() 
+    await browser.pause(1000)
+    console.log(`AAAAA ${islodgingLocatorOptionDisplayed}`);
+    console.log(`BBBB ${isprivateResidenceOptionDisplayed}`);
+    await browser.pause(1000)
+    expect(islodgingLocatorOptionDisplayed, 'Correct Message is Displayed').to.be.true 
+    expect(isprivateResidenceOptionDisplayed, 'Correct Message is Displayed').to.be.true 
+}); 
 
 
-//     Then I Verify “What would you like to list?” is displayed
-//     And I Verify “Lodging“ and “Private residence“ options are displayed
-//     When I Click on “Private residence“
-//     Then I Verify ”Step 1 of 3” is displayed
-//     And I Verify “See how much you could earn!” is displayed
+When(/^I Click on “Private residence“$/, async function() {
+    let privateResidenceOption = await $(`//p[text()="Private residence"]`)
+    await privateResidenceOption.click()
+    await browser.pause(1000)
+}); 
+
+Then(/^I Verify ”Step 1 of 3” is displayed$/, async function() {
+    let step1Of3Locator = await $(`//div[text()="Step 1 of 3"]`)
+    let result = await step1Of3Locator.isDisplayed()
+    await browser.pause(1000)
+    expect(result, 'Correct Message is Displayed').to.be.true 
+}); 
+
+Then(/^I Verify “See how much you could earn!” is displayed$/, async function() {
+    let seeHowMuchYouCanEarnLocator = await $(`//h1[text()="See how much you could earn!"]`)
+    let result = await seeHowMuchYouCanEarnLocator.isDisplayed()
+    await browser.pause(1000)
+    expect(result, 'Correct Message is Displayed').to.be.true 
+}); 
+
+Then(/^I Enter “4“ as bedroom and Enter “2.5“ as bathroom$/, async function() {
+    let bedroomPlusButton = await $(`//button[@aria-label="Increase bedrooms"]`)
+    await bedroomPlusButton.click()
+    await bedroomPlusButton.click()
+    await bedroomPlusButton.click()
+    await bedroomPlusButton.click()
+    let bathroomPlusButton = await $(`//button[@aria-label="Increase bathrooms"]`)
+    await bathroomPlusButton.click()
+    await bathroomPlusButton.click()
+    await bathroomPlusButton.click()
+    await browser.pause(1000)
+}); 
+
+
+
+
 //     When I Enter “4“ as bedroom and Enter “2.5“ as bathroom
 //     And I Click on “Next” button
 //     Then I Verify ”Step 2 of 3” is displayed

@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664490909911' stop='1664490923744'>
+    <name>Sprint2 Test</name>
+    <title>Sprint2 Test</title>
+    <test-cases>
+        <test-case start='1664490910082' status='failed' stop='1664490923742'>
+            <name>Verify "List your Property" flow</name>
+            <title>Verify "List your Property" flow</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-12'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664490910097' status='passed' stop='1664490917028'>
+                    <name>Given I am on Hotels.com home page020202</name>
+                    <title>Given I am on Hotels.com home page020202</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664490917028' status='passed' stop='1664490919429'>
+                    <name>When I Click on “List your property”</name>
+                    <title>When I Click on “List your property”</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664490919429' status='passed' stop='1664490921470'>
+                    <name>Then I Verify “What would you like to list” is displayed"</name>
+                    <title>Then I Verify “What would you like to list” is displayed"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664490921470' status='failed' stop='1664490923742'>
+                    <name>And I Verify “Lodging“ and “Private residence“ options are displayed</name>
+                    <title>And I Verify “Lodging“ and “Private residence“ options are displayed</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='6a6e9236-46b3-47f3-9e21-33acb731d217-attachment.png' type='image/png' size='418180'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Correct Message is Displayed: expected true to be false</message>
+                <stack-trace>AssertionError: Correct Message is Displayed: expected true to be false
+                    + expected - actual
+                
+                    -true
+                    +false
+                
+                    at World.&lt;anonymous> (/Users/ron-coding/Documents/git/Js-Summer-Cucumber-2022/step-definitions/z-stepDef-Sprint2/AllCaseseS2SD.js:88:82)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
